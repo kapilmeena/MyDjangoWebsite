@@ -1,24 +1,42 @@
 from django.db import models
-import datetime
-from django.utils import timezone
+from django.db.models.signals import pre_save
+from django.dispatch import receiver
 # Create your models here.
 
 
 class Configuration(models.Model):
+
     name = models.CharField(max_length=30)
     user_defined_name = models.CharField(max_length=50)
     FieldTypes = (('aD', 'Dimension'), ('aM', 'Measure'))
     type = models.CharField(max_length=11, choices=FieldTypes)
+    is_key = models.BooleanField(default=False, editable=True)
+    unit = models.CharField(max_length=30, null=True, blank=True, editable=True)
 
     def __str__(self):
         return self.name
 
+    def get_type(self):
 
-class Author(models.Model):
-    author_name = models.CharField(max_length=24)
-    # author_dob = models.DateField(default=django.utils.timezone.now(), null=True)
-    # author_dob = models.DateField(default=datetime.date.today(), null=True)
-    author_dob = models.DateField(default=timezone.now().year, null=True)
+        field_object = self._meta.get_field('type')
+        value = self._get_FIELD_display(self, field_object)
 
-    def __str__(self):
-        return self.author_name
+        return value
+
+    # def _get_FIELD_display(self, field):
+    #     if self.is_key == 'True':
+    #         # self.is_key = True
+    #         self.unit = models.CharField(max_length=30, editable=True)
+    #     return self.unit
+
+    # def save(self, *args, **kwargs):
+    #     if self.type == 'Dimension':
+    #         self.is_key = models.BooleanField(default=False, editable=True)
+    #         self.unit = models.CharField(max_length=30, null=True, blank=True, editable=True)
+    #     super(Configuration, self).save(*args, **kwargs)
+
+# @receiver(pre_save, sender=Configuration)
+# def configuration_save_handler(sender, instance, *args, **kwargs):
+#     if instance.types == 'Dimension':
+#         instance.is_key = models.BooleanField(default=False, editable=True)
+#         instance.unit = models.CharField(max_length=30, null=True, blank=True, editable=False)
