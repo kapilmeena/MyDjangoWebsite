@@ -10,18 +10,29 @@ class Configuration(models.Model):
     user_defined_name = models.CharField(max_length=50)
     FieldTypes = (('aD', 'Dimension'), ('aM', 'Measure'))
     type = models.CharField(max_length=11, choices=FieldTypes)
-    is_key = models.BooleanField(default=False, editable=True)
-    unit = models.CharField(max_length=30, null=True, blank=True, editable=True)
+    is_key = models.BooleanField(default=False)
+    unit = models.CharField(max_length=30, null=True, blank=True)
 
     def __str__(self):
         return self.name
 
-    def get_type(self):
+    def save(self, *args, **kwargs):
+        if self.type != 'aD':
+            self.is_key = False
+            self.unit = ''
+        super(Configuration, self).save(*args, **kwargs)
 
-        field_object = self._meta.get_field('type')
-        value = self._get_FIELD_display(self, field_object)
+    # def clean(self):
+    #     if self.type == 'aM':
+    #         if self.unit
+    #
 
-        return value
+    # def get_type(self):
+    #
+    #     field_object = self._meta.get_field('type')
+    #     value = self._get_FIELD_display(self, field_object)
+    #
+    #     return value
 
     # def _get_FIELD_display(self, field):
     #     if self.is_key == 'True':
