@@ -72,6 +72,11 @@ TEMPLATES = [
 WSGI_APPLICATION = 'django_project.wsgi.application'
 
 
+# Define the database manager to setup the various projects
+# DATABASE_ROUTERS = ['manager.router.DatabaseAppsRouter']
+# DATABASE_APPS_MAPPING = {'client_data': 'client',
+#                          'server_data':'server'}
+
 # Database
 # https://docs.djangoproject.com/en/2.0/ref/settings/#databases
 

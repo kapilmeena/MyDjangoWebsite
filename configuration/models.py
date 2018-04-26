@@ -4,22 +4,48 @@ from django.dispatch import receiver
 # Create your models here.
 
 
-class Configuration(models.Model):
-
-    name = models.CharField(max_length=30)
-    user_defined_name = models.CharField(max_length=50)
-    FieldTypes = (('aD', 'Dimension'), ('aM', 'Measure'))
-    type = models.CharField(max_length=11, choices=FieldTypes)
-    is_key = models.BooleanField(default=False)
-    unit = models.CharField(max_length=30, null=True, blank=True)
+class Name(models.Model):
+    Sys_name = models.CharField(max_length=1)
+    #
+    # class Meta:
+    #     app_label = 'server_data'
 
     def __str__(self):
-        return self.name
+        return self.Sys_name
+
+
+class Configuration(models.Model):
+
+    FieldTypes = (
+        ('aD', 'Dimension'),
+        ('aM', 'Measure')
+    )
+
+    name = models.OneToOneField(Name, on_delete=models.CASCADE)
+    # name = models.ForeignKey(Name, on_delete=models.CASCADE, unique=True)
+
+    user_defined_name = models.CharField(max_length=50)
+
+    type = models.CharField(max_length=11, choices=FieldTypes)
+
+    is_active = models.BooleanField(default=True)
+
+    is_kpi = models.BooleanField(default=False)
+
+    unit = models.CharField(max_length=30, null=True, blank=True)
+
+
+    #
+    # class Meta:
+    #     app_label = 'client_data'
+
+    def __str__(self):
+        return self.name.Sys_name
 
     def save(self, *args, **kwargs):
-        if self.type != 'aD':
-            self.is_key = False
-            self.unit = ''
+        if self.type != 'aM':
+            self.is_kpi = False
+            self.unit = None
         super(Configuration, self).save(*args, **kwargs)
 
     # def clean(self):
@@ -35,14 +61,14 @@ class Configuration(models.Model):
     #     return value
 
     # def _get_FIELD_display(self, field):
-    #     if self.is_key == 'True':
-    #         # self.is_key = True
+    #     if self.is_kpi == 'True':
+    #         # self.is_kpi = True
     #         self.unit = models.CharField(max_length=30, editable=True)
     #     return self.unit
 
     # def save(self, *args, **kwargs):
     #     if self.type == 'Dimension':
-    #         self.is_key = models.BooleanField(default=False, editable=True)
+    #         self.is_kpi = models.BooleanField(default=False, editable=True)
     #         self.unit = models.CharField(max_length=30, null=True, blank=True, editable=True)
     #     super(Configuration, self).save(*args, **kwargs)
 
