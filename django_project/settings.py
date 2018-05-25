@@ -73,11 +73,7 @@ WSGI_APPLICATION = 'django_project.wsgi.application'
 
 
 # Define the database manager to setup the various projects
-<<<<<<< HEAD
 # DATABASE_ROUTERS = ['configuration.router.MyCustomRouter']
-=======
-# DATABASE_ROUTERS = ['manager.router.DatabaseAppsRouter']
->>>>>>> refs/remotes/origin/master
 # DATABASE_APPS_MAPPING = {'client_data': 'client',
 #                          'server_data':'server'}
 

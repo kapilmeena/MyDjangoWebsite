@@ -1,0 +1,55 @@
+{% load static %}
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Title</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" type="text/css" href="{% static 'bootstrap/css/bootstrap.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'admin/css/forms.css' %}">
+    <script src="{% static 'codemirror/lib/codemirror.js' %}"></script>
+    <link rel="stylesheet" type="text/css" href="{% static 'codemirror/lib/codemirror.css' %}"/>
+    <script src="{% static 'codemirror/mode/sql/sql.js' %}"></script>
+    <title>editor</title>
+</head>
+<body>
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-md-2">
+            <div class="list-group">
+                {% for i in list %}
+                    <button type="button" class="list-group-item list-group-item-action">{{ i }}</button>
+                {% endfor %}
+            </div>
+        </div>
+        <div class="col-md-10">
+            <form action="" method="post">
+                {% csrf_token %}
+                    {{ form }}
+                <input type="submit" class="btn btn-success">
+            </form>
+        </div>
+    </div>
+<div class="submit-row row">
+    <input type="submit" value="Save" class="default" name="_save">
+
+
+        <p class="deletelink-box"><a href="/admin/configuration/formula/39/delete/" class="deletelink">Delete</a></p>
+
+
+    <input type="submit" value="Save and add another" name="_addanother">
+    <input type="submit" value="Save and continue editing" name="_continue">
+</div>
+{#    <script>#}
+{#        var myCodeMirror = CodeMirror.fromTextArea(id_f_description)#}
+{#    </script>#}
+</div>
+<!-- Optional JavaScript -->
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</body>
+</html>

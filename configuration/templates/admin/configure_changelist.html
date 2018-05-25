@@ -3,7 +3,7 @@
 {% block object-tools %}
     {{ block.super }}
 {#    <a class="button" href="/action/populate/">Populate</a>#}
-    <form method="post" action="/action/generatedate/">
+    <form method="post" action="/action/generatedata/">
          {% csrf_token %}
         <input type="hidden" name="next" value="{{ request.path }}">
         <input type="submit" name="autoGenerator" value="Auto Generate">

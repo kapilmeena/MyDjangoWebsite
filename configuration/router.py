@@ -10,14 +10,7 @@
 #         """
 #         if model._meta.app_label == 'server_data':
 #             return 'sever'
-<<<<<<< HEAD
 #         elif model._meta.app_label == 'client_data':
-=======
-#         return None
-#
-#         else
-#         if model._meta.app_label == 'client_data':
->>>>>>> refs/remotes/origin/master
 #             return 'client'
 #         return None
 #
@@ -27,11 +20,8 @@
 #         """
 #         if model._meta.app_label == 'server_data':
 #             return 'server'
-<<<<<<< HEAD
 #         elif model._meta.app_label == 'client_data':
 #             return 'client'
-=======
->>>>>>> refs/remotes/origin/master
 #         return None
 #
 #     def allow_syncdb(self, db, model):
@@ -40,11 +30,8 @@
 #         """
 #         if db == 'server':
 #             return model._meta.app_label == 'server_data'
-<<<<<<< HEAD
 #         elif db == 'client':
 #             return model._meta.app_label == 'client_data'
-=======
->>>>>>> refs/remotes/origin/master
 #         elif model._meta.app_label == 'server':
 #             return False
 #         return None

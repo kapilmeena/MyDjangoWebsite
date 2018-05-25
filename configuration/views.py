@@ -1,60 +1,46 @@
 import random
-<<<<<<< HEAD
 import re
 import json
 from django.shortcuts import render
-from .models import Configuration, Name
+from .models import Configuration, Name, formula
 from django.http import HttpResponse, HttpResponseRedirect
+from .forms import FormulaForm
 from configuration.admin import ConfigurationResource
 
 
 def export_models (request):
     # dataset = ConfigurationResource().export()
-    # data = json.load(dataset.json)
+
     configuration_resource = ConfigurationResource()
-    queryset1 = Configuration.objects.filter(type='aM')
-    queryset2 = Configuration.objects.filter(type='aD')
+
+    queryset1= Configuration.objects.filter(type="aM")
+    queryset2= Configuration.objects.filter(type="aD")
+
     dataset0 = configuration_resource.export()
     dataset1 = configuration_resource.export(queryset1)
     dataset2 = configuration_resource.export(queryset2)
 
-    # data=json.loads(dataset0.json)
-    # name=json.dumps(data)
-    name = dataset0.export('json')
+    # final_dataset = json.dump(dataset0.json)
+    # final_dataset = json.load(dataset0.json)
+    # final_dataset = json.load(dataset1.json)
+    # final_dataset = json.load(dataset2.json)
+    # arr = list()
+    # arr.extend( [dataset0.json,dataset1.json,dataset2.json])
 
-    response = HttpResponse(name)
-    response['Content-Disposition'] = 'attachment; filename = "config.txt"'
+    mydataset = dataset0.json + dataset1.json  +  dataset2.json
+
+    final_data = mydataset.replace('][', ',')
+
+
+    response = HttpResponse(final_data,content_type='application/json')
+    response['Content-Disposition'] = 'attachment; filename="config.json"'
     return response
 
-
-    # dataset_final = json.dump('['.join({"name":dataset0)},{"aM":{dataset1.tsv}},{"aD":{dataset2.tsv}})+']')
-
-
-    # Configuration.objects.all()
-
-    # dataset_final = dataset1+dataset2
-    #
-    # datasets = dataset1+dataset2
-    # dataset_final = json.load(datasets)
-    #
-    # return HttpResponse(json.dumps(dataset_final))
-    # return HttpResponse(dataset_final)
-
-    # return HttpResponse(dataset.json)
-    # return HttpResponse(dataset.csv)
-    # return HttpResponse(dataset.xls)
-    # response = HttpResponse(dataset.json, content_type='application/json')
+    # response = HttpResponse(arr, content_type='application/json')
     # response['Content-Disposition'] = 'attachment; filename="config.json"'
     # return response
-    # response = HttpResponse(dataset.csv, content_type='text/csv')
-    # response['Content-Disposition'] = 'attachment; filename="config.csv"'
-    # return response
-    # response = HttpResponse(dataset.xls, content_type='application/vnd.ms-excel')
-    # response['Content-Disposition'] = 'attachment; filename="config.xls"'
-    # return response
-    # response = HttpResponse(dataset0.tsv, content_type='application/tsv')
-    # response['Content-Disposition'] = 'attachment; filename="config.txt"'
-    # return response
+
+
 #
 # import sys, os
 #
@@ -72,15 +58,10 @@ def export_models (request):
 #         file = open(filename, "w")
 #         file.write(serialize("json", cls.objects.all()))
 #     return HttpResponse(status=200)
-=======
-# from django.shortcuts import render
-from .models import Configuration, Name
->>>>>>> refs/remotes/origin/master
 
 
 # Name.__getattribute__(Name ,name='name')
 
-<<<<<<< HEAD
 
 # Create your views here.
 def load_default(self,Name):
@@ -93,22 +74,10 @@ def load_default(self,Name):
     if self.type != 'aM':
         self.is_kpi = False
         self.unit = ''
-=======
-# Create your views here.
-def load_default(self):
-    self.user_defined_name = self.name.Sys_name
-    self.type = random.choice([True, False])
-    self.is_active = True
-    if self.type != 'mD':
-        self.is_kpi = False
-        self.unit = ''
-
->>>>>>> refs/remotes/origin/master
     else:
         self.is_kpi = True
         self.unit = '$'
 
-<<<<<<< HEAD
 
 def populate(nameObject):
     try:
@@ -126,7 +95,26 @@ def load_all_from_default(request):
     next = request.POST.get('next', '/')
     return HttpResponseRedirect(next)
 
-=======
-def load_all_from_default():
-    configure = Configuration()
->>>>>>> refs/remotes/origin/master
+def show_me(request):
+    return render(HttpResponse, 'admin/configure_changelist.html')
+
+def show_formula(request):
+    context = {
+        'form': FormulaForm
+    }
+    list = Name.objects.all()
+    if request.method == "POST":
+        form = FormulaForm(request.POST)
+        if form.is_valid():
+            model_instance = form.save(commit=False)
+            # model_instance.timestamp = timezone.now()
+            model_instance.save()
+            context = {
+                'list': list,
+                'form': FormulaForm
+            }
+        return render(request, 'editor.html', context)
+    else:
+        form = FormulaForm
+
+        return render(request, 'editor.html', {'list':list})

@@ -1,29 +1,33 @@
 from django.contrib import admin
-<<<<<<< HEAD
 from django.contrib.admin import AdminSite
-from configuration.models import Configuration, Name
+from configuration.models import Configuration, Name, formula
 from import_export import resources
-from import_export.fields import Field
 from import_export.admin import ImportExportModelAdmin, ImportExportActionModelAdmin
 
 class ConfigurationResource(resources.ModelResource):
-    # name = Field(column_name='user_defined_name')
-    # name = Field()
+    name = resources.Field()
+    # measure = resources.Field(column_name='measure') # column name represent the name of column in exported data
+    # dimension = resources.Field(column_name='dimension')
+    # full_title = resources.Field()
 
     class Meta:
         model = Configuration
-        fields = ('user_defined_name',)
-        # fields = ('name',)
-        # exclude = ('type',)
+        fields = ('name',)
 
-        # def dehydrate_name(self, configuration):
-        #     return '%s' % (configuration.user_defined_name)
+    def dehydrate_name(self,Configuration):
+        return '%s' %(Configuration.user_defined_name)
+
+    # def dehydrate_dimension(self,Configuration):
+    #     return '%s' %(Configuration.user_defined_name)
+    #
+    # def dehydrate_measure(self,Configuration):
+    #     return '%s' %(Configuration.user_defined_name)
 
 # class ConfigurationAdmin(ImportExportModelAdmin):
 #     resource_class = ConfigurationResource
 
-# class ConfigurationAdmin(ImportExportActionModelAdmin):
-#     pass
+class ConfigurationAdmin(ImportExportActionModelAdmin):
+    pass
 
 # action function
 def disable_multiple_column(modeladmin, request, queryset):
@@ -37,39 +41,15 @@ def activate_multiple_column(modeladmin, request, queryset):
 
 # description for display in action dropdown
 disable_multiple_column.short_description = "mark these column deactivate"
-=======
-from configuration.models import Configuration, Name
-from django.http import request
-
-
-# from django.contrib import messages
-
-def  disable_multiple_column(modeladmin, request, queryset):
-    queryset.update(is_active = False)
-disable_multiple_column.short_description = "mark these column deactivate"
-
-def  activate_multiple_column(modeladmin, request, queryset):
-    queryset.update(is_active = True)
->>>>>>> refs/remotes/origin/master
 activate_multiple_column.short_description = "mark these column activate"
 
 
 class ConfigurationAdmin(admin.ModelAdmin):
-<<<<<<< HEAD
     list_display = ['name', 'user_defined_name', 'type', 'is_active', 'is_kpi', 'unit']
     # list_display = ['user_defined_name', 'type', 'is_active', 'is_kpi', 'unit']
     search_fields = ['name', 'user_defined_name']
     list_filter = ('type', 'is_active')
     ordering = ('name',)
-=======
-
-    list_display = ['name', 'user_defined_name', 'type', 'is_active', 'is_kpi', 'unit']
-
-    search_fields = ['name', 'user_defined_name', 'type']
-
-    list_filter = ('type', 'is_active')
-
->>>>>>> refs/remotes/origin/master
     fieldsets = (
         (None, {
             'fields': ('name', 'user_defined_name', 'type', 'is_active')
@@ -79,7 +59,6 @@ class ConfigurationAdmin(admin.ModelAdmin):
             'fields': ('is_kpi', 'unit'),
         })
     )
-<<<<<<< HEAD
     actions = [disable_multiple_column, activate_multiple_column]  # list of action function here
 
     def has_add_permission(self, request):  # add delete option for this model
@@ -101,19 +80,17 @@ class ConfigurationAdmin(admin.ModelAdmin):
         js = ("admin/js/jquery.js", "admin/js/my_code.js",)  # JS for conditionally hide advance field
 
 
+class formulaAdmin(admin.ModelAdmin):
+    class Media:
+        js = ("ace-builds/src-noconflict/ace.js","my_formula_script.js",)
+        css = ("my_formula_css.js",)
+
+
 class MyAdminSite(AdminSite):
     site_header = 'Monty Python administration'
 
 
 admin_site = MyAdminSite(name='myadmin')
-=======
-    actions = [disable_multiple_column, activate_multiple_column]
-
-    class Media:
-        js = ("jquery.js", "my_code.js",)
-
-
->>>>>>> refs/remotes/origin/master
 # class NameAdmin(admin.ModelAdmin):
 #     admin.site.register(Name)
 
@@ -167,9 +144,7 @@ admin_site = MyAdminSite(name='myadmin')
 # class ConfigureEdits(admin.ChoicesFieldListFilter):
 #     _field_list_filters =
 
-<<<<<<< HEAD
 # register our model with admin
-=======
-
->>>>>>> refs/remotes/origin/master
 admin.site.register(Configuration, ConfigurationAdmin)
+
+admin.site.register(formula)
