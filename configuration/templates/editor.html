@@ -7,12 +7,46 @@
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
     <link rel="stylesheet" type="text/css" href="{% static 'bootstrap/css/bootstrap.css' %}">
     <link rel="stylesheet" type="text/css" href="{% static 'admin/css/forms.css' %}">
-    <script src="{% static 'codemirror/lib/codemirror.js' %}"></script>
     <link rel="stylesheet" type="text/css" href="{% static 'codemirror/lib/codemirror.css' %}"/>
+    <link rel="stylesheet" type="text/css" href="{% static 'codemirror/theme/blackboard.css' %}"/>
+    <link rel="stylesheet" type="text/css" href="{% static 'codemirror/addon/hint/show-hint.css' %}"/>
+
+    <script src="{% static 'codemirror/lib/codemirror.js' %}"></script>
+    <script src="{% static 'codemirror/addon/hint/show-hint.js' %}"></script>
+    <script src="{% static 'codemirror/addon/hint/sql-hint.js' %}"></script>
+    <script src="{% static 'codemirror/addon/edit/matchbrackets.js' %}"></script>
+{#    <script src="{% static 'codemirror/addon/edit/closebrackets.js' %}"></script>#}
     <script src="{% static 'codemirror/mode/sql/sql.js' %}"></script>
+
     <title>editor</title>
+
+    <style>
+    .CodeMirror {
+        width: 800px;
+        border: 1px solid black;
+    }
+
+    #button-run-sql {
+        margin-top: 5px;
+    }
+
+    #data-container {
+        margin-top: 20px;
+    }
+    .dataTable {
+        font-size: 14px;
+    }
+    table.dataTable tbody td {
+        padding: 5px;
+    }
+    #data-table_length {
+        clear: both;
+        margin-top: 10px;
+    }
+    </style>
 </head>
 <body>
 <div class="container-fluid">
@@ -28,23 +62,38 @@
             <form action="" method="post">
                 {% csrf_token %}
                     {{ form }}
-                <input type="submit" class="btn btn-success">
+                <input type="submit" class="btn btn-success" onclick="copy()">
             </form>
+{#            <div class="submit-row">#}
+{#                <input type="submit" value="Save" class="default" name="_save">#}
+{##}
+{##}
+{#                    <p class="deletelink-box"><a href="" class="deletelink">Delete</a></p>#}
+{##}
+{##}
+{#                <input type="submit" value="Save and add another" name="_addanother">#}
+{#                <input type="submit" value="Save and continue editing" name="_continue">#}
+{#            </div>#}
         </div>
     </div>
-<div class="submit-row row">
-    <input type="submit" value="Save" class="default" name="_save">
+    <script>
+    window.onload = function() {
+          window.editor = CodeMirror.fromTextArea(document.getElementById('id_f_description'), {
+            mode: 'text/x-vtsql',
+            indentWithTabs: true,
+            smartIndent: true,
+            lineNumbers: true,
+            matchBrackets : true,
+            autofocus: true
+          });
+          editor.setOption("theme", 'blackboard')
+        };
+    function copy(){
+        var editor_content = window.editor.getValue();
+        document.getElementById('id_f_description').value = editor_content;
 
-
-        <p class="deletelink-box"><a href="/admin/configuration/formula/39/delete/" class="deletelink">Delete</a></p>
-
-
-    <input type="submit" value="Save and add another" name="_addanother">
-    <input type="submit" value="Save and continue editing" name="_continue">
-</div>
-{#    <script>#}
-{#        var myCodeMirror = CodeMirror.fromTextArea(id_f_description)#}
-{#    </script>#}
+    }
+    </script>
 </div>
 <!-- Optional JavaScript -->
 <!-- jQuery first, then Popper.js, then Bootstrap JS -->

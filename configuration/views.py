@@ -99,10 +99,11 @@ def show_me(request):
     return render(HttpResponse, 'admin/configure_changelist.html')
 
 def show_formula(request):
+    list = formula.objects.all()
     context = {
+        'list': list,
         'form': FormulaForm
     }
-    list = Name.objects.all()
     if request.method == "POST":
         form = FormulaForm(request.POST)
         if form.is_valid():
@@ -117,4 +118,4 @@ def show_formula(request):
     else:
         form = FormulaForm
 
-        return render(request, 'editor.html', {'list':list})
+        return render(request, 'editor.html', context)
