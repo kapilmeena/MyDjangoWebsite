@@ -93,6 +93,13 @@ DATABASES = {
         'ENGINE': 'django.db.backends.sqlite3',
         'NAME': os.path.join(BASE_DIR, 'server_db.sqlite3'),
     },
+    # "vertica" : {
+    #         "host": '10.90.21.44',
+    #         "port": 5433,
+    #         "user": 'dev_theresults_appuser',
+    #         "database": 'cc_dev_qa_vertica01',
+    #         "password": 'the_results_app1234'
+    #     },
 }
 
 

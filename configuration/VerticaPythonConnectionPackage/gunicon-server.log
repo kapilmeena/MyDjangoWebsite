@@ -1,0 +1,2 @@
+[ERROR]: [05/24/2018 10:54:06 AM] [file : __main__, 'Vertica' object has no attribute 'conn']
+[ERROR]: [05/24/2018 10:54:41 AM] [file : __main__, Severity: b'ERROR', Message: b'Column "userId" does not exist', Sqlstate: b'42703', Routine: b'transformColumnRef', File: b'parse_expr.c', Line: b'1375', SQL: "SELECT * FROM dev_analytics.sentence_prediction WHERE REGEXP_ILIKE(sentence, '^BOTT') AND userId='askme' ORDER BY occurrence DESC LIMIT 10;"]

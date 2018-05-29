@@ -1,0 +1,1821 @@
+[ERROR]: [05/28/2018 10:54:57 AM] [Internal Server Error: /action/formula1/]
+Traceback (most recent call last):
+  File "/home/kapil/venv36/lib/python3.6/site-packages/django/template/base.py", line 475, in parse
+    compile_func = self.tags[command]
+KeyError: 'static'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/kapil/venv36/lib/python3.6/site-packages/django/core/handlers/exception.py", line 35, in inner
+    response = get_response(request)
+  File "/home/kapil/venv36/lib/python3.6/site-packages/django/core/handlers/base.py", line 128, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/kapil/venv36/lib/python3.6/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/kapil/PycharmProjects/django_project/configuration/views.py", line 122, in editor_formula
+    return render(request, 'queryInspector.html')
+  File "/home/kapil/venv36/lib/python3.6/site-packages/django/shortcuts.py", line 36, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/home/kapil/venv36/lib/python3.6/site-packages/django/template/loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "/home/kapil/venv36/lib/python3.6/site-packages/django/template/loader.py", line 15, in get_template
+    return engine.get_template(template_name)
+  File "/home/kapil/venv36/lib/python3.6/site-packages/django/template/backends/django.py", line 34, in get_template
+    return Template(self.engine.get_template(template_name), self)
+  File "/home/kapil/venv36/lib/python3.6/site-packages/django/template/engine.py", line 144, in get_template
+    template, origin = self.find_template(template_name)
+  File "/home/kapil/venv36/lib/python3.6/site-packages/django/template/engine.py", line 126, in find_template
+    template = loader.get_template(name, skip=skip)
+  File "/home/kapil/venv36/lib/python3.6/site-packages/django/template/loaders/base.py", line 30, in get_template
+    contents, origin, origin.template_name, self.engine,
+  File "/home/kapil/venv36/lib/python3.6/site-packages/django/template/base.py", line 160, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "/home/kapil/venv36/lib/python3.6/site-packages/django/template/base.py", line 198, in compile_nodelist
+    return parser.parse()
+  File "/home/kapil/venv36/lib/python3.6/site-packages/django/template/base.py", line 477, in parse
+    self.invalid_block_tag(token, command, parse_until)
+  File "/home/kapil/venv36/lib/python3.6/site-packages/django/template/base.py", line 539, in invalid_block_tag
+    "or load this tag?" % (token.lineno, command)
+django.template.exceptions.TemplateSyntaxError: Invalid block tag on line 12: 'static'. Did you forget to register or load this tag?
+[WARNING]: [05/28/2018 10:56:30 AM] [Not Found: /action/formula1/showresults]
+[WARNING]: [05/28/2018 10:59:43 AM] [Not Found: /action/showresults]
+[WARNING]: [05/28/2018 11:00:37 AM] [Not Found: /action/showresults]
+[WARNING]: [05/28/2018 11:09:02 AM] [Not Found: /action/showresults/]
+[WARNING]: [05/28/2018 11:09:04 AM] [Not Found: /action/showresults/]
+[WARNING]: [05/28/2018 11:09:16 AM] [Not Found: /action/]
+[WARNING]: [05/28/2018 11:09:37 AM] [Not Found: /action/showresults]
+[WARNING]: [05/28/2018 11:23:49 AM] [Not Found: /favicon.ico]
+[WARNING]: [05/28/2018 11:23:54 AM] [Not Found: /action/show_results]
+[WARNING]: [05/28/2018 11:23:55 AM] [Not Found: /action/show_results]
+[WARNING]: [05/28/2018 11:24:21 AM] [Not Found: /action/show_results]
+[ERROR]: [05/28/2018 11:26:40 AM] [couldn't send message]
+[ERROR]: [05/28/2018 11:26:40 AM] [file : configuration.VerticaPythonConnectionPackage.connection, ]
+[ERROR]: [05/28/2018 11:26:40 AM] [file : configuration.VerticaPythonConnectionPackage.connection, 'NoneType' object is not callable]
+[ERROR]: [05/28/2018 11:27:02 AM] [couldn't send message]
+[ERROR]: [05/28/2018 11:27:02 AM] [couldn't send message]
+[ERROR]: [05/28/2018 11:27:02 AM] [couldn't send message]
+[ERROR]: [05/28/2018 11:27:02 AM] [couldn't send message]
+[ERROR]: [05/28/2018 11:27:02 AM] [couldn't send message]
+[ERROR]: [05/28/2018 11:27:02 AM] [file : configuration.VerticaPythonConnectionPackage.connection, ]
+[ERROR]: [05/28/2018 11:27:02 AM] [file : configuration.VerticaPythonConnectionPackage.connection, ]
+[ERROR]: [05/28/2018 11:27:02 AM] [file : configuration.VerticaPythonConnectionPackage.connection, ]
+[ERROR]: [05/28/2018 11:27:02 AM] [file : configuration.VerticaPythonConnectionPackage.connection, ]
+[ERROR]: [05/28/2018 11:27:02 AM] [file : configuration.VerticaPythonConnectionPackage.connection, ]
+[ERROR]: [05/28/2018 11:27:02 AM] [file : configuration.VerticaPythonConnectionPackage.connection, 'NoneType' object is not callable]
+[ERROR]: [05/28/2018 11:27:02 AM] [file : configuration.VerticaPythonConnectionPackage.connection, 'NoneType' object is not callable]
+[ERROR]: [05/28/2018 11:27:02 AM] [file : configuration.VerticaPythonConnectionPackage.connection, 'NoneType' object is not callable]
+[ERROR]: [05/28/2018 11:27:02 AM] [file : configuration.VerticaPythonConnectionPackage.connection, 'NoneType' object is not callable]
+[ERROR]: [05/28/2018 11:27:02 AM] [file : configuration.VerticaPythonConnectionPackage.connection, 'NoneType' object is not callable]
+[ERROR]: [05/28/2018 11:55:20 AM] [couldn't send message]
+[ERROR]: [05/28/2018 11:55:20 AM] [file : configuration.VerticaPythonConnectionPackage.connection, ]
+[ERROR]: [05/28/2018 11:55:20 AM] [file : configuration.VerticaPythonConnectionPackage.connection, 'NoneType' object is not callable]
+[ERROR]: [05/28/2018 11:55:41 AM] [couldn't send message]
+[ERROR]: [05/28/2018 11:55:41 AM] [couldn't send message]
+[ERROR]: [05/28/2018 11:55:41 AM] [file : configuration.VerticaPythonConnectionPackage.connection, ]
+[ERROR]: [05/28/2018 11:55:41 AM] [file : configuration.VerticaPythonConnectionPackage.connection, ]
+[ERROR]: [05/28/2018 11:55:41 AM] [file : configuration.VerticaPythonConnectionPackage.connection, 'NoneType' object is not callable]
+[ERROR]: [05/28/2018 11:55:41 AM] [file : configuration.VerticaPythonConnectionPackage.connection, 'NoneType' object is not callable]
+[ERROR]: [05/28/2018 11:57:31 AM] [couldn't send message]
+[ERROR]: [05/28/2018 11:57:31 AM] [file : configuration.VerticaPythonConnectionPackage.connection, ]
+[ERROR]: [05/28/2018 11:57:31 AM] [Internal Server Error: /action/showresults/]
+Traceback (most recent call last):
+  File "/home/kapil/PycharmProjects/django_project/configuration/VerticaPythonConnectionPackage/connection.py", line 36, in read_data
+    self.execute(query)
+TypeError: 'NoneType' object is not callable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/kapil/PycharmProjects/django_project/configuration/views.py", line 143, in show_results
+    data = json.dumps(vp.read_data(a), default=myconverter)
+  File "/home/kapil/PycharmProjects/django_project/configuration/VerticaPythonConnectionPackage/connection.py", line 41, in read_data
+    self.execute(query, )
+TypeError: 'NoneType' object is not callable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/kapil/venv36/lib/python3.6/site-packages/django/core/handlers/exception.py", line 35, in inner
+    response = get_response(request)
+  File "/home/kapil/venv36/lib/python3.6/site-packages/django/core/handlers/base.py", line 128, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/kapil/venv36/lib/python3.6/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/kapil/PycharmProjects/django_project/configuration/views.py", line 149, in show_results
+    return jsonify(errorMessage=msg, error=True)
+  File "/home/kapil/venv36/lib/python3.6/site-packages/flask/json/__init__.py", line 309, in jsonify
+    if current_app.config['JSONIFY_PRETTYPRINT_REGULAR'] or current_app.debug:
+  File "/home/kapil/venv36/lib/python3.6/site-packages/werkzeug/local.py", line 347, in __getattr__
+    return getattr(self._get_current_object(), name)
+  File "/home/kapil/venv36/lib/python3.6/site-packages/werkzeug/local.py", line 306, in _get_current_object
+    return self.__local()
+  File "/home/kapil/venv36/lib/python3.6/site-packages/flask/globals.py", line 51, in _find_app
+    raise RuntimeError(_app_ctx_err_msg)
+RuntimeError: Working outside of application context.
+
+This typically means that you attempted to use functionality that needed
+to interface with the current application object in some way. To solve
+this, set up an application context with app.app_context().  See the
+documentation for more information.
+[ERROR]: [05/28/2018 11:57:52 AM] [couldn't send message]
+[ERROR]: [05/28/2018 11:57:52 AM] [couldn't send message]
+[ERROR]: [05/28/2018 11:57:52 AM] [file : configuration.VerticaPythonConnectionPackage.connection, ]
+[ERROR]: [05/28/2018 11:57:52 AM] [file : configuration.VerticaPythonConnectionPackage.connection, ]
+[ERROR]: [05/28/2018 11:57:52 AM] [Internal Server Error: /action/showresults/]
+Traceback (most recent call last):
+  File "/home/kapil/PycharmProjects/django_project/configuration/VerticaPythonConnectionPackage/connection.py", line 36, in read_data
+    self.execute(query)
+TypeError: 'NoneType' object is not callable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/kapil/PycharmProjects/django_project/configuration/views.py", line 143, in show_results
+    data = json.dumps(vp.read_data(a), default=myconverter)
+  File "/home/kapil/PycharmProjects/django_project/configuration/VerticaPythonConnectionPackage/connection.py", line 41, in read_data
+    self.execute(query, )
+TypeError: 'NoneType' object is not callable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/kapil/venv36/lib/python3.6/site-packages/django/core/handlers/exception.py", line 35, in inner
+    response = get_response(request)
+  File "/home/kapil/venv36/lib/python3.6/site-packages/django/core/handlers/base.py", line 128, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/kapil/venv36/lib/python3.6/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/kapil/PycharmProjects/django_project/configuration/views.py", line 149, in show_results
+    return jsonify(errorMessage=msg, error=True)
+  File "/home/kapil/venv36/lib/python3.6/site-packages/flask/json/__init__.py", line 309, in jsonify
+    if current_app.config['JSONIFY_PRETTYPRINT_REGULAR'] or current_app.debug:
+  File "/home/kapil/venv36/lib/python3.6/site-packages/werkzeug/local.py", line 347, in __getattr__
+    return getattr(self._get_current_object(), name)
+  File "/home/kapil/venv36/lib/python3.6/site-packages/werkzeug/local.py", line 306, in _get_current_object
+    return self.__local()
+  File "/home/kapil/venv36/lib/python3.6/site-packages/flask/globals.py", line 51, in _find_app
+    raise RuntimeError(_app_ctx_err_msg)
+RuntimeError: Working outside of application context.
+
+This typically means that you attempted to use functionality that needed
+to interface with the current application object in some way. To solve
+this, set up an application context with app.app_context().  See the
+documentation for more information.
+[ERROR]: [05/28/2018 11:57:52 AM] [Internal Server Error: /action/showresults/]
+Traceback (most recent call last):
+  File "/home/kapil/PycharmProjects/django_project/configuration/VerticaPythonConnectionPackage/connection.py", line 36, in read_data
+    self.execute(query)
+TypeError: 'NoneType' object is not callable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/kapil/PycharmProjects/django_project/configuration/views.py", line 143, in show_results
+    data = json.dumps(vp.read_data(a), default=myconverter)
+  File "/home/kapil/PycharmProjects/django_project/configuration/VerticaPythonConnectionPackage/connection.py", line 41, in read_data
+    self.execute(query, )
+TypeError: 'NoneType' object is not callable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/kapil/venv36/lib/python3.6/site-packages/django/core/handlers/exception.py", line 35, in inner
+    response = get_response(request)
+  File "/home/kapil/venv36/lib/python3.6/site-packages/django/core/handlers/base.py", line 128, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/kapil/venv36/lib/python3.6/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/kapil/PycharmProjects/django_project/configuration/views.py", line 149, in show_results
+    return jsonify(errorMessage=msg, error=True)
+  File "/home/kapil/venv36/lib/python3.6/site-packages/flask/json/__init__.py", line 309, in jsonify
+    if current_app.config['JSONIFY_PRETTYPRINT_REGULAR'] or current_app.debug:
+  File "/home/kapil/venv36/lib/python3.6/site-packages/werkzeug/local.py", line 347, in __getattr__
+    return getattr(self._get_current_object(), name)
+  File "/home/kapil/venv36/lib/python3.6/site-packages/werkzeug/local.py", line 306, in _get_current_object
+    return self.__local()
+  File "/home/kapil/venv36/lib/python3.6/site-packages/flask/globals.py", line 51, in _find_app
+    raise RuntimeError(_app_ctx_err_msg)
+RuntimeError: Working outside of application context.
+
+This typically means that you attempted to use functionality that needed
+to interface with the current application object in some way. To solve
+this, set up an application context with app.app_context().  See the
+documentation for more information.
+[ERROR]: [05/28/2018 11:59:38 AM] [couldn't send message]
+[ERROR]: [05/28/2018 11:59:38 AM] [file : configuration.VerticaPythonConnectionPackage.connection, ]
+[ERROR]: [05/28/2018 11:59:38 AM] [file : configuration.VerticaPythonConnectionPackage.connection, 'NoneType' object is not callable]
+[ERROR]: [05/28/2018 12:00:07 PM] [couldn't send message]
+[ERROR]: [05/28/2018 12:00:07 PM] [file : configuration.VerticaPythonConnectionPackage.connection, ]
+[ERROR]: [05/28/2018 12:00:07 PM] [file : configuration.VerticaPythonConnectionPackage.connection, 'NoneType' object is not callable]
+[ERROR]: [05/28/2018 12:00:31 PM] [couldn't send message]
+[ERROR]: [05/28/2018 12:00:31 PM] [file : configuration.VerticaPythonConnectionPackage.connection, ]
+[ERROR]: [05/28/2018 12:00:31 PM] [file : configuration.VerticaPythonConnectionPackage.connection, 'NoneType' object is not callable]
+[ERROR]: [05/28/2018 12:01:49 PM] [couldn't send message]
+[ERROR]: [05/28/2018 12:01:49 PM] [file : configuration.VerticaPythonConnectionPackage.connection, ]
+[ERROR]: [05/28/2018 12:01:49 PM] [Internal Server Error: /action/showresults/]
+Traceback (most recent call last):
+  File "/home/kapil/PycharmProjects/django_project/configuration/VerticaPythonConnectionPackage/connection.py", line 36, in read_data
+    self.execute(query)
+TypeError: 'NoneType' object is not callable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/kapil/PycharmProjects/django_project/configuration/views.py", line 143, in show_results
+    data = json.dumps(vp.read_data(a), default=myconverter)
+  File "/home/kapil/PycharmProjects/django_project/configuration/VerticaPythonConnectionPackage/connection.py", line 41, in read_data
+    self.execute(query, )
+TypeError: 'NoneType' object is not callable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/kapil/venv36/lib/python3.6/site-packages/django/core/handlers/exception.py", line 35, in inner
+    response = get_response(request)
+  File "/home/kapil/venv36/lib/python3.6/site-packages/django/core/handlers/base.py", line 128, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/kapil/venv36/lib/python3.6/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/kapil/PycharmProjects/django_project/configuration/views.py", line 149, in show_results
+    return jsonify(errorMessage=msg, error=True)
+  File "/home/kapil/venv36/lib/python3.6/site-packages/flask/json/__init__.py", line 309, in jsonify
+    if current_app.config['JSONIFY_PRETTYPRINT_REGULAR'] or current_app.debug:
+  File "/home/kapil/venv36/lib/python3.6/site-packages/werkzeug/local.py", line 347, in __getattr__
+    return getattr(self._get_current_object(), name)
+  File "/home/kapil/venv36/lib/python3.6/site-packages/werkzeug/local.py", line 306, in _get_current_object
+    return self.__local()
+  File "/home/kapil/venv36/lib/python3.6/site-packages/flask/globals.py", line 51, in _find_app
+    raise RuntimeError(_app_ctx_err_msg)
+RuntimeError: Working outside of application context.
+
+This typically means that you attempted to use functionality that needed
+to interface with the current application object in some way. To solve
+this, set up an application context with app.app_context().  See the
+documentation for more information.
+[ERROR]: [05/28/2018 12:02:18 PM] [couldn't send message]
+[ERROR]: [05/28/2018 12:02:18 PM] [file : configuration.VerticaPythonConnectionPackage.connection, ]
+[ERROR]: [05/28/2018 12:02:18 PM] [Internal Server Error: /action/showresults/]
+Traceback (most recent call last):
+  File "/home/kapil/PycharmProjects/django_project/configuration/VerticaPythonConnectionPackage/connection.py", line 36, in read_data
+    self.execute(query)
+TypeError: 'NoneType' object is not callable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/kapil/PycharmProjects/django_project/configuration/views.py", line 143, in show_results
+    data = json.dumps(vp.read_data(a), default=myconverter)
+  File "/home/kapil/PycharmProjects/django_project/configuration/VerticaPythonConnectionPackage/connection.py", line 41, in read_data
+    self.execute(query, )
+TypeError: 'NoneType' object is not callable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/kapil/venv36/lib/python3.6/site-packages/django/core/handlers/exception.py", line 35, in inner
+    response = get_response(request)
+  File "/home/kapil/venv36/lib/python3.6/site-packages/django/core/handlers/base.py", line 128, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/kapil/venv36/lib/python3.6/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/kapil/PycharmProjects/django_project/configuration/views.py", line 149, in show_results
+    return jsonify(errorMessage=msg, error=True)
+  File "/home/kapil/venv36/lib/python3.6/site-packages/flask/json/__init__.py", line 309, in jsonify
+    if current_app.config['JSONIFY_PRETTYPRINT_REGULAR'] or current_app.debug:
+  File "/home/kapil/venv36/lib/python3.6/site-packages/werkzeug/local.py", line 347, in __getattr__
+    return getattr(self._get_current_object(), name)
+  File "/home/kapil/venv36/lib/python3.6/site-packages/werkzeug/local.py", line 306, in _get_current_object
+    return self.__local()
+  File "/home/kapil/venv36/lib/python3.6/site-packages/flask/globals.py", line 51, in _find_app
+    raise RuntimeError(_app_ctx_err_msg)
+RuntimeError: Working outside of application context.
+
+This typically means that you attempted to use functionality that needed
+to interface with the current application object in some way. To solve
+this, set up an application context with app.app_context().  See the
+documentation for more information.
+[ERROR]: [05/28/2018 12:02:41 PM] [file : configuration.VerticaPythonConnectionPackage.connection, 'NoneType' object has no attribute 'closed']
+[ERROR]: [05/28/2018 12:02:42 PM] [couldn't send message]
+[ERROR]: [05/28/2018 12:02:42 PM] [file : configuration.VerticaPythonConnectionPackage.connection, ]
+[ERROR]: [05/28/2018 12:02:42 PM] [Internal Server Error: /action/showresults/]
+Traceback (most recent call last):
+  File "/home/kapil/PycharmProjects/django_project/configuration/VerticaPythonConnectionPackage/connection.py", line 36, in read_data
+    self.execute(query)
+TypeError: 'NoneType' object is not callable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/kapil/PycharmProjects/django_project/configuration/views.py", line 143, in show_results
+    data = json.dumps(vp.read_data(a), default=myconverter)
+  File "/home/kapil/PycharmProjects/django_project/configuration/VerticaPythonConnectionPackage/connection.py", line 41, in read_data
+    self.execute(query, )
+TypeError: 'NoneType' object is not callable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/kapil/venv36/lib/python3.6/site-packages/django/core/handlers/exception.py", line 35, in inner
+    response = get_response(request)
+  File "/home/kapil/venv36/lib/python3.6/site-packages/django/core/handlers/base.py", line 128, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/kapil/venv36/lib/python3.6/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/kapil/PycharmProjects/django_project/configuration/views.py", line 149, in show_results
+    return jsonify(errorMessage=msg, error=True)
+  File "/home/kapil/venv36/lib/python3.6/site-packages/flask/json/__init__.py", line 309, in jsonify
+    if current_app.config['JSONIFY_PRETTYPRINT_REGULAR'] or current_app.debug:
+  File "/home/kapil/venv36/lib/python3.6/site-packages/werkzeug/local.py", line 347, in __getattr__
+    return getattr(self._get_current_object(), name)
+  File "/home/kapil/venv36/lib/python3.6/site-packages/werkzeug/local.py", line 306, in _get_current_object
+    return self.__local()
+  File "/home/kapil/venv36/lib/python3.6/site-packages/flask/globals.py", line 51, in _find_app
+    raise RuntimeError(_app_ctx_err_msg)
+RuntimeError: Working outside of application context.
+
+This typically means that you attempted to use functionality that needed
+to interface with the current application object in some way. To solve
+this, set up an application context with app.app_context().  See the
+documentation for more information.
+[ERROR]: [05/28/2018 12:04:21 PM] [couldn't send message]
+[ERROR]: [05/28/2018 12:04:21 PM] [file : configuration.VerticaPythonConnectionPackage.connection, ]
+[ERROR]: [05/28/2018 12:04:21 PM] [file : configuration.VerticaPythonConnectionPackage.connection, 'NoneType' object is not callable]
+[ERROR]: [05/28/2018 12:04:56 PM] [couldn't send message]
+[ERROR]: [05/28/2018 12:04:56 PM] [file : configuration.VerticaPythonConnectionPackage.connection, ]
+[ERROR]: [05/28/2018 12:04:56 PM] [file : configuration.VerticaPythonConnectionPackage.connection, 'NoneType' object is not callable]
+[ERROR]: [05/28/2018 12:11:43 PM] [couldn't send message]
+[ERROR]: [05/28/2018 12:11:43 PM] [file : configuration.VerticaPythonConnectionPackage.connection, ]
+[ERROR]: [05/28/2018 12:11:43 PM] [file : configuration.VerticaPythonConnectionPackage.connection, 'NoneType' object is not callable]
+[ERROR]: [05/28/2018 12:13:54 PM] [couldn't send message]
+[ERROR]: [05/28/2018 12:13:54 PM] [file : configuration.VerticaPythonConnectionPackage.connection, ]
+[ERROR]: [05/28/2018 12:13:54 PM] [Internal Server Error: /action/showresults/]
+Traceback (most recent call last):
+  File "/home/kapil/PycharmProjects/django_project/configuration/VerticaPythonConnectionPackage/connection.py", line 36, in read_data
+    self.execute(query)
+TypeError: 'NoneType' object is not callable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/kapil/PycharmProjects/django_project/configuration/views.py", line 138, in show_results
+    data = json.dumps(vp.read_data(a), default=myconverter)
+  File "/home/kapil/PycharmProjects/django_project/configuration/VerticaPythonConnectionPackage/connection.py", line 41, in read_data
+    self.execute(query, )
+TypeError: 'NoneType' object is not callable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/kapil/venv36/lib/python3.6/site-packages/django/core/handlers/exception.py", line 35, in inner
+    response = get_response(request)
+  File "/home/kapil/venv36/lib/python3.6/site-packages/django/core/handlers/base.py", line 128, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/kapil/venv36/lib/python3.6/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/kapil/PycharmProjects/django_project/configuration/views.py", line 145, in show_results
+    return jsonify(errorMessage=msg, error=True)
+  File "/home/kapil/venv36/lib/python3.6/site-packages/flask/json/__init__.py", line 309, in jsonify
+    if current_app.config['JSONIFY_PRETTYPRINT_REGULAR'] or current_app.debug:
+  File "/home/kapil/venv36/lib/python3.6/site-packages/werkzeug/local.py", line 347, in __getattr__
+    return getattr(self._get_current_object(), name)
+  File "/home/kapil/venv36/lib/python3.6/site-packages/werkzeug/local.py", line 306, in _get_current_object
+    return self.__local()
+  File "/home/kapil/venv36/lib/python3.6/site-packages/flask/globals.py", line 51, in _find_app
+    raise RuntimeError(_app_ctx_err_msg)
+RuntimeError: Working outside of application context.
+
+This typically means that you attempted to use functionality that needed
+to interface with the current application object in some way. To solve
+this, set up an application context with app.app_context().  See the
+documentation for more information.
+[ERROR]: [05/28/2018 12:14:35 PM] [file : configuration.VerticaPythonConnectionPackage.connection, 'NoneType' object has no attribute 'closed']
+[ERROR]: [05/28/2018 12:18:29 PM] [couldn't send message]
+[ERROR]: [05/28/2018 12:18:29 PM] [file : configuration.VerticaPythonConnectionPackage.connection, ]
+[ERROR]: [05/28/2018 12:18:29 PM] [file : configuration.VerticaPythonConnectionPackage.connection, 'NoneType' object is not callable]
+[ERROR]: [05/28/2018 12:18:53 PM] [couldn't send message]
+[ERROR]: [05/28/2018 12:18:53 PM] [file : configuration.VerticaPythonConnectionPackage.connection, ]
+[ERROR]: [05/28/2018 12:18:53 PM] [file : configuration.VerticaPythonConnectionPackage.connection, 'NoneType' object is not callable]
+[ERROR]: [05/28/2018 12:18:57 PM] [couldn't send message]
+[ERROR]: [05/28/2018 12:18:57 PM] [file : configuration.VerticaPythonConnectionPackage.connection, ]
+[ERROR]: [05/28/2018 12:18:57 PM] [file : configuration.VerticaPythonConnectionPackage.connection, 'NoneType' object is not callable]
+[ERROR]: [05/28/2018 12:19:01 PM] [couldn't send message]
+[ERROR]: [05/28/2018 12:19:01 PM] [file : configuration.VerticaPythonConnectionPackage.connection, ]
+[ERROR]: [05/28/2018 12:19:01 PM] [file : configuration.VerticaPythonConnectionPackage.connection, 'NoneType' object is not callable]
+[ERROR]: [05/28/2018 12:19:12 PM] [couldn't send message]
+[ERROR]: [05/28/2018 12:19:12 PM] [file : configuration.VerticaPythonConnectionPackage.connection, ]
+[ERROR]: [05/28/2018 12:19:12 PM] [file : configuration.VerticaPythonConnectionPackage.connection, 'NoneType' object is not callable]
+[ERROR]: [05/28/2018 12:19:18 PM] [couldn't send message]
+[ERROR]: [05/28/2018 12:19:18 PM] [file : configuration.VerticaPythonConnectionPackage.connection, ]
+[ERROR]: [05/28/2018 12:19:18 PM] [file : configuration.VerticaPythonConnectionPackage.connection, 'NoneType' object is not callable]
+[ERROR]: [05/28/2018 12:19:38 PM] [couldn't send message]
+[ERROR]: [05/28/2018 12:19:38 PM] [couldn't send message]
+[ERROR]: [05/28/2018 12:19:38 PM] [couldn't send message]
+[ERROR]: [05/28/2018 12:19:38 PM] [couldn't send message]
+[ERROR]: [05/28/2018 12:19:38 PM] [file : configuration.VerticaPythonConnectionPackage.connection, ]
+[ERROR]: [05/28/2018 12:19:38 PM] [file : configuration.VerticaPythonConnectionPackage.connection, ]
+[ERROR]: [05/28/2018 12:19:38 PM] [file : configuration.VerticaPythonConnectionPackage.connection, ]
+[ERROR]: [05/28/2018 12:19:38 PM] [file : configuration.VerticaPythonConnectionPackage.connection, ]
+[ERROR]: [05/28/2018 12:19:38 PM] [file : configuration.VerticaPythonConnectionPackage.connection, 'NoneType' object is not callable]
+[ERROR]: [05/28/2018 12:19:38 PM] [file : configuration.VerticaPythonConnectionPackage.connection, 'NoneType' object is not callable]
+[ERROR]: [05/28/2018 12:19:38 PM] [file : configuration.VerticaPythonConnectionPackage.connection, 'NoneType' object is not callable]
+[ERROR]: [05/28/2018 12:19:38 PM] [file : configuration.VerticaPythonConnectionPackage.connection, 'NoneType' object is not callable]
+[ERROR]: [05/28/2018 12:19:46 PM] [couldn't send message]
+[ERROR]: [05/28/2018 12:19:46 PM] [file : configuration.VerticaPythonConnectionPackage.connection, ]
+[ERROR]: [05/28/2018 12:19:46 PM] [file : configuration.VerticaPythonConnectionPackage.connection, 'NoneType' object is not callable]
+[ERROR]: [05/28/2018 12:48:21 PM] [couldn't send message]
+[ERROR]: [05/28/2018 12:48:21 PM] [file : configuration.VerticaPythonConnectionPackage.connection, ]
+[ERROR]: [05/28/2018 12:48:21 PM] [file : configuration.VerticaPythonConnectionPackage.connection, 'NoneType' object is not callable]
+[ERROR]: [05/28/2018 12:50:32 PM] [couldn't send message]
+[ERROR]: [05/28/2018 12:50:32 PM] [file : configuration.VerticaPythonConnectionPackage.connection, ]
+[ERROR]: [05/28/2018 12:50:32 PM] [Internal Server Error: /action/showresults/]
+Traceback (most recent call last):
+  File "/home/kapil/PycharmProjects/django_project/configuration/VerticaPythonConnectionPackage/connection.py", line 36, in read_data
+    self.execute(query)
+TypeError: 'NoneType' object is not callable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/kapil/PycharmProjects/django_project/configuration/views.py", line 139, in show_results
+    data = json.dumps(vp.read_data(a), default=myconverter)
+  File "/home/kapil/PycharmProjects/django_project/configuration/VerticaPythonConnectionPackage/connection.py", line 41, in read_data
+    self.execute(query, )
+TypeError: 'NoneType' object is not callable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/kapil/venv36/lib/python3.6/site-packages/django/core/handlers/exception.py", line 35, in inner
+    response = get_response(request)
+  File "/home/kapil/venv36/lib/python3.6/site-packages/django/core/handlers/base.py", line 128, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/kapil/venv36/lib/python3.6/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/kapil/PycharmProjects/django_project/configuration/views.py", line 146, in show_results
+    return jsonify(errorMessage=msg, error=True)
+  File "/home/kapil/venv36/lib/python3.6/site-packages/flask/json/__init__.py", line 309, in jsonify
+    if current_app.config['JSONIFY_PRETTYPRINT_REGULAR'] or current_app.debug:
+  File "/home/kapil/venv36/lib/python3.6/site-packages/werkzeug/local.py", line 347, in __getattr__
+    return getattr(self._get_current_object(), name)
+  File "/home/kapil/venv36/lib/python3.6/site-packages/werkzeug/local.py", line 306, in _get_current_object
+    return self.__local()
+  File "/home/kapil/venv36/lib/python3.6/site-packages/flask/globals.py", line 51, in _find_app
+    raise RuntimeError(_app_ctx_err_msg)
+RuntimeError: Working outside of application context.
+
+This typically means that you attempted to use functionality that needed
+to interface with the current application object in some way. To solve
+this, set up an application context with app.app_context().  See the
+documentation for more information.
+[ERROR]: [05/28/2018 01:02:00 PM] [couldn't send message]
+[ERROR]: [05/28/2018 01:02:00 PM] [file : configuration.VerticaPythonConnectionPackage.connection, ]
+[ERROR]: [05/28/2018 01:02:00 PM] [file : configuration.VerticaPythonConnectionPackage.connection, 'NoneType' object is not callable]
+[ERROR]: [05/28/2018 01:04:11 PM] [couldn't send message]
+[ERROR]: [05/28/2018 01:04:11 PM] [file : configuration.VerticaPythonConnectionPackage.connection, ]
+[ERROR]: [05/28/2018 01:04:11 PM] [Internal Server Error: /action/showresults/]
+Traceback (most recent call last):
+  File "/home/kapil/PycharmProjects/django_project/configuration/VerticaPythonConnectionPackage/connection.py", line 36, in read_data
+    self.execute(query)
+TypeError: 'NoneType' object is not callable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/kapil/PycharmProjects/django_project/configuration/views.py", line 139, in show_results
+    data = json.dumps(vp.read_data(a), default=myconverter)
+  File "/home/kapil/PycharmProjects/django_project/configuration/VerticaPythonConnectionPackage/connection.py", line 41, in read_data
+    self.execute(query, )
+TypeError: 'NoneType' object is not callable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/kapil/venv36/lib/python3.6/site-packages/django/core/handlers/exception.py", line 35, in inner
+    response = get_response(request)
+  File "/home/kapil/venv36/lib/python3.6/site-packages/django/core/handlers/base.py", line 128, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/kapil/venv36/lib/python3.6/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/kapil/PycharmProjects/django_project/configuration/views.py", line 146, in show_results
+    return jsonify(errorMessage=msg, error=True)
+  File "/home/kapil/venv36/lib/python3.6/site-packages/flask/json/__init__.py", line 309, in jsonify
+    if current_app.config['JSONIFY_PRETTYPRINT_REGULAR'] or current_app.debug:
+  File "/home/kapil/venv36/lib/python3.6/site-packages/werkzeug/local.py", line 347, in __getattr__
+    return getattr(self._get_current_object(), name)
+  File "/home/kapil/venv36/lib/python3.6/site-packages/werkzeug/local.py", line 306, in _get_current_object
+    return self.__local()
+  File "/home/kapil/venv36/lib/python3.6/site-packages/flask/globals.py", line 51, in _find_app
+    raise RuntimeError(_app_ctx_err_msg)
+RuntimeError: Working outside of application context.
+
+This typically means that you attempted to use functionality that needed
+to interface with the current application object in some way. To solve
+this, set up an application context with app.app_context().  See the
+documentation for more information.
+[ERROR]: [05/29/2018 05:35:37 AM] [file : configuration.VerticaPythonConnectionPackage.connection, Severity: b'ERROR', Message: b'Syntax error at or near "ggjjjjj"', Sqlstate: b'42601', Position: b'1', Routine: b'base_yyerror', File: b'/scratch_a/release/svrtar18364/vbuild/vertica/Parser/scan.l', Line: b'1043', SQL: 'ggjjjjj']
+[ERROR]: [05/29/2018 05:35:38 AM] [Internal Server Error: /action/showresults/]
+Traceback (most recent call last):
+  File "/home/kapil/PycharmProjects/django_project/configuration/VerticaPythonConnectionPackage/connection.py", line 36, in read_data
+    self.execute(query)
+  File "/home/kapil/venv36/lib/python3.6/site-packages/vertica_python/vertica/cursor.py", line 116, in execute
+    raise errors.QueryError.from_error_response(self._message, operation)
+vertica_python.errors.VerticaSyntaxError: Severity: b'ERROR', Message: b'Syntax error at or near "ggjjjjj"', Sqlstate: b'42601', Position: b'1', Routine: b'base_yyerror', File: b'/scratch_a/release/svrtar18364/vbuild/vertica/Parser/scan.l', Line: b'1043', SQL: 'ggjjjjj'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/kapil/PycharmProjects/django_project/configuration/views.py", line 139, in show_results
+    data = json.dumps(vp.read_data(a), default=myconverter)
+  File "/home/kapil/PycharmProjects/django_project/configuration/VerticaPythonConnectionPackage/connection.py", line 41, in read_data
+    self.execute(query, )
+  File "/home/kapil/venv36/lib/python3.6/site-packages/vertica_python/vertica/cursor.py", line 116, in execute
+    raise errors.QueryError.from_error_response(self._message, operation)
+vertica_python.errors.VerticaSyntaxError: Severity: b'ERROR', Message: b'Syntax error at or near "ggjjjjj"', Sqlstate: b'42601', Position: b'1', Routine: b'base_yyerror', File: b'/scratch_a/release/svrtar18364/vbuild/vertica/Parser/scan.l', Line: b'1043', SQL: 'ggjjjjj'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/kapil/venv36/lib/python3.6/site-packages/django/core/handlers/exception.py", line 35, in inner
+    response = get_response(request)
+  File "/home/kapil/venv36/lib/python3.6/site-packages/django/core/handlers/base.py", line 128, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/kapil/venv36/lib/python3.6/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/kapil/PycharmProjects/django_project/configuration/views.py", line 146, in show_results
+    return jsonify(errorMessage=msg, error=True)
+  File "/home/kapil/venv36/lib/python3.6/site-packages/flask/json/__init__.py", line 309, in jsonify
+    if current_app.config['JSONIFY_PRETTYPRINT_REGULAR'] or current_app.debug:
+  File "/home/kapil/venv36/lib/python3.6/site-packages/werkzeug/local.py", line 347, in __getattr__
+    return getattr(self._get_current_object(), name)
+  File "/home/kapil/venv36/lib/python3.6/site-packages/werkzeug/local.py", line 306, in _get_current_object
+    return self.__local()
+  File "/home/kapil/venv36/lib/python3.6/site-packages/flask/globals.py", line 51, in _find_app
+    raise RuntimeError(_app_ctx_err_msg)
+RuntimeError: Working outside of application context.
+
+This typically means that you attempted to use functionality that needed
+to interface with the current application object in some way. To solve
+this, set up an application context with app.app_context().  See the
+documentation for more information.
+[ERROR]: [05/29/2018 05:44:50 AM] [file : configuration.VerticaPythonConnectionPackage.connection, Severity: b'ERROR', Message: b'Syntax error at or near "all"', Sqlstate: b'42601', Position: b'15', Routine: b'base_yyerror', File: b'/scratch_a/release/svrtar18364/vbuild/vertica/Parser/scan.l', Line: b'1043', SQL: 'select * from all;']
+[ERROR]: [05/29/2018 05:44:51 AM] [Internal Server Error: /action/showresults/]
+Traceback (most recent call last):
+  File "/home/kapil/PycharmProjects/django_project/configuration/VerticaPythonConnectionPackage/connection.py", line 36, in read_data
+    self.execute(query)
+  File "/home/kapil/venv36/lib/python3.6/site-packages/vertica_python/vertica/cursor.py", line 116, in execute
+    raise errors.QueryError.from_error_response(self._message, operation)
+vertica_python.errors.VerticaSyntaxError: Severity: b'ERROR', Message: b'Syntax error at or near "all"', Sqlstate: b'42601', Position: b'15', Routine: b'base_yyerror', File: b'/scratch_a/release/svrtar18364/vbuild/vertica/Parser/scan.l', Line: b'1043', SQL: 'select * from all;'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/kapil/PycharmProjects/django_project/configuration/views.py", line 139, in show_results
+    data = json.dumps(vp.read_data(a), default=myconverter)
+  File "/home/kapil/PycharmProjects/django_project/configuration/VerticaPythonConnectionPackage/connection.py", line 41, in read_data
+    self.execute(query, )
+  File "/home/kapil/venv36/lib/python3.6/site-packages/vertica_python/vertica/cursor.py", line 116, in execute
+    raise errors.QueryError.from_error_response(self._message, operation)
+vertica_python.errors.VerticaSyntaxError: Severity: b'ERROR', Message: b'Syntax error at or near "all"', Sqlstate: b'42601', Position: b'15', Routine: b'base_yyerror', File: b'/scratch_a/release/svrtar18364/vbuild/vertica/Parser/scan.l', Line: b'1043', SQL: 'select * from all;'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/kapil/venv36/lib/python3.6/site-packages/django/core/handlers/exception.py", line 35, in inner
+    response = get_response(request)
+  File "/home/kapil/venv36/lib/python3.6/site-packages/django/core/handlers/base.py", line 128, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/kapil/venv36/lib/python3.6/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/kapil/PycharmProjects/django_project/configuration/views.py", line 146, in show_results
+    return jsonify(errorMessage=msg, error=True)
+  File "/home/kapil/venv36/lib/python3.6/site-packages/flask/json/__init__.py", line 309, in jsonify
+    if current_app.config['JSONIFY_PRETTYPRINT_REGULAR'] or current_app.debug:
+  File "/home/kapil/venv36/lib/python3.6/site-packages/werkzeug/local.py", line 347, in __getattr__
+    return getattr(self._get_current_object(), name)
+  File "/home/kapil/venv36/lib/python3.6/site-packages/werkzeug/local.py", line 306, in _get_current_object
+    return self.__local()
+  File "/home/kapil/venv36/lib/python3.6/site-packages/flask/globals.py", line 51, in _find_app
+    raise RuntimeError(_app_ctx_err_msg)
+RuntimeError: Working outside of application context.
+
+This typically means that you attempted to use functionality that needed
+to interface with the current application object in some way. To solve
+this, set up an application context with app.app_context().  See the
+documentation for more information.
+[ERROR]: [05/29/2018 05:45:15 AM] [file : configuration.VerticaPythonConnectionPackage.connection, Severity: b'ERROR', Message: b'Syntax error at or near "all"', Sqlstate: b'42601', Position: b'15', Routine: b'base_yyerror', File: b'/scratch_a/release/svrtar18364/vbuild/vertica/Parser/scan.l', Line: b'1043', SQL: 'select * from all;']
+[ERROR]: [05/29/2018 05:45:16 AM] [Internal Server Error: /action/showresults/]
+Traceback (most recent call last):
+  File "/home/kapil/PycharmProjects/django_project/configuration/VerticaPythonConnectionPackage/connection.py", line 36, in read_data
+    self.execute(query)
+  File "/home/kapil/venv36/lib/python3.6/site-packages/vertica_python/vertica/cursor.py", line 116, in execute
+    raise errors.QueryError.from_error_response(self._message, operation)
+vertica_python.errors.VerticaSyntaxError: Severity: b'ERROR', Message: b'Syntax error at or near "all"', Sqlstate: b'42601', Position: b'15', Routine: b'base_yyerror', File: b'/scratch_a/release/svrtar18364/vbuild/vertica/Parser/scan.l', Line: b'1043', SQL: 'select * from all;'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/kapil/PycharmProjects/django_project/configuration/views.py", line 139, in show_results
+    data = json.dumps(vp.read_data(a), default=myconverter)
+  File "/home/kapil/PycharmProjects/django_project/configuration/VerticaPythonConnectionPackage/connection.py", line 41, in read_data
+    self.execute(query, )
+  File "/home/kapil/venv36/lib/python3.6/site-packages/vertica_python/vertica/cursor.py", line 116, in execute
+    raise errors.QueryError.from_error_response(self._message, operation)
+vertica_python.errors.VerticaSyntaxError: Severity: b'ERROR', Message: b'Syntax error at or near "all"', Sqlstate: b'42601', Position: b'15', Routine: b'base_yyerror', File: b'/scratch_a/release/svrtar18364/vbuild/vertica/Parser/scan.l', Line: b'1043', SQL: 'select * from all;'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/kapil/venv36/lib/python3.6/site-packages/django/core/handlers/exception.py", line 35, in inner
+    response = get_response(request)
+  File "/home/kapil/venv36/lib/python3.6/site-packages/django/core/handlers/base.py", line 128, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/kapil/venv36/lib/python3.6/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/kapil/PycharmProjects/django_project/configuration/views.py", line 146, in show_results
+    return jsonify(errorMessage=msg, error=True)
+  File "/home/kapil/venv36/lib/python3.6/site-packages/flask/json/__init__.py", line 309, in jsonify
+    if current_app.config['JSONIFY_PRETTYPRINT_REGULAR'] or current_app.debug:
+  File "/home/kapil/venv36/lib/python3.6/site-packages/werkzeug/local.py", line 347, in __getattr__
+    return getattr(self._get_current_object(), name)
+  File "/home/kapil/venv36/lib/python3.6/site-packages/werkzeug/local.py", line 306, in _get_current_object
+    return self.__local()
+  File "/home/kapil/venv36/lib/python3.6/site-packages/flask/globals.py", line 51, in _find_app
+    raise RuntimeError(_app_ctx_err_msg)
+RuntimeError: Working outside of application context.
+
+This typically means that you attempted to use functionality that needed
+to interface with the current application object in some way. To solve
+this, set up an application context with app.app_context().  See the
+documentation for more information.
+[ERROR]: [05/29/2018 05:47:23 AM] [file : configuration.VerticaPythonConnectionPackage.connection, Severity: b'ERROR', Message: b'Syntax error at or near "all"', Sqlstate: b'42601', Position: b'15', Routine: b'base_yyerror', File: b'/scratch_a/release/svrtar18364/vbuild/vertica/Parser/scan.l', Line: b'1043', SQL: 'select * from all;']
+[ERROR]: [05/29/2018 05:47:25 AM] [Internal Server Error: /action/showresults/]
+Traceback (most recent call last):
+  File "/home/kapil/PycharmProjects/django_project/configuration/VerticaPythonConnectionPackage/connection.py", line 36, in read_data
+    self.execute(query)
+  File "/home/kapil/venv36/lib/python3.6/site-packages/vertica_python/vertica/cursor.py", line 116, in execute
+    raise errors.QueryError.from_error_response(self._message, operation)
+vertica_python.errors.VerticaSyntaxError: Severity: b'ERROR', Message: b'Syntax error at or near "all"', Sqlstate: b'42601', Position: b'15', Routine: b'base_yyerror', File: b'/scratch_a/release/svrtar18364/vbuild/vertica/Parser/scan.l', Line: b'1043', SQL: 'select * from all;'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/kapil/PycharmProjects/django_project/configuration/views.py", line 139, in show_results
+    data = json.dumps(vp.read_data(a), default=myconverter)
+  File "/home/kapil/PycharmProjects/django_project/configuration/VerticaPythonConnectionPackage/connection.py", line 41, in read_data
+    self.execute(query, )
+  File "/home/kapil/venv36/lib/python3.6/site-packages/vertica_python/vertica/cursor.py", line 116, in execute
+    raise errors.QueryError.from_error_response(self._message, operation)
+vertica_python.errors.VerticaSyntaxError: Severity: b'ERROR', Message: b'Syntax error at or near "all"', Sqlstate: b'42601', Position: b'15', Routine: b'base_yyerror', File: b'/scratch_a/release/svrtar18364/vbuild/vertica/Parser/scan.l', Line: b'1043', SQL: 'select * from all;'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/kapil/venv36/lib/python3.6/site-packages/django/core/handlers/exception.py", line 35, in inner
+    response = get_response(request)
+  File "/home/kapil/venv36/lib/python3.6/site-packages/django/core/handlers/base.py", line 128, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/kapil/venv36/lib/python3.6/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/kapil/PycharmProjects/django_project/configuration/views.py", line 146, in show_results
+    return jsonify(errorMessage=msg, error=True)
+  File "/home/kapil/venv36/lib/python3.6/site-packages/flask/json/__init__.py", line 309, in jsonify
+    if current_app.config['JSONIFY_PRETTYPRINT_REGULAR'] or current_app.debug:
+  File "/home/kapil/venv36/lib/python3.6/site-packages/werkzeug/local.py", line 347, in __getattr__
+    return getattr(self._get_current_object(), name)
+  File "/home/kapil/venv36/lib/python3.6/site-packages/werkzeug/local.py", line 306, in _get_current_object
+    return self.__local()
+  File "/home/kapil/venv36/lib/python3.6/site-packages/flask/globals.py", line 51, in _find_app
+    raise RuntimeError(_app_ctx_err_msg)
+RuntimeError: Working outside of application context.
+
+This typically means that you attempted to use functionality that needed
+to interface with the current application object in some way. To solve
+this, set up an application context with app.app_context().  See the
+documentation for more information.
+[ERROR]: [05/29/2018 05:48:22 AM] [file : configuration.VerticaPythonConnectionPackage.connection, Severity: b'ERROR', Message: b'Syntax error at or near "all"', Sqlstate: b'42601', Position: b'15', Routine: b'base_yyerror', File: b'/scratch_a/release/svrtar18364/vbuild/vertica/Parser/scan.l', Line: b'1043', SQL: 'select * from all;']
+[ERROR]: [05/29/2018 05:48:23 AM] [Internal Server Error: /action/showresults/]
+Traceback (most recent call last):
+  File "/home/kapil/PycharmProjects/django_project/configuration/VerticaPythonConnectionPackage/connection.py", line 36, in read_data
+    self.execute(query)
+  File "/home/kapil/venv36/lib/python3.6/site-packages/vertica_python/vertica/cursor.py", line 116, in execute
+    raise errors.QueryError.from_error_response(self._message, operation)
+vertica_python.errors.VerticaSyntaxError: Severity: b'ERROR', Message: b'Syntax error at or near "all"', Sqlstate: b'42601', Position: b'15', Routine: b'base_yyerror', File: b'/scratch_a/release/svrtar18364/vbuild/vertica/Parser/scan.l', Line: b'1043', SQL: 'select * from all;'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/kapil/PycharmProjects/django_project/configuration/views.py", line 139, in show_results
+    data = json.dumps(vp.read_data(a), default=myconverter)
+  File "/home/kapil/PycharmProjects/django_project/configuration/VerticaPythonConnectionPackage/connection.py", line 41, in read_data
+    self.execute(query, )
+  File "/home/kapil/venv36/lib/python3.6/site-packages/vertica_python/vertica/cursor.py", line 116, in execute
+    raise errors.QueryError.from_error_response(self._message, operation)
+vertica_python.errors.VerticaSyntaxError: Severity: b'ERROR', Message: b'Syntax error at or near "all"', Sqlstate: b'42601', Position: b'15', Routine: b'base_yyerror', File: b'/scratch_a/release/svrtar18364/vbuild/vertica/Parser/scan.l', Line: b'1043', SQL: 'select * from all;'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/kapil/venv36/lib/python3.6/site-packages/django/core/handlers/exception.py", line 35, in inner
+    response = get_response(request)
+  File "/home/kapil/venv36/lib/python3.6/site-packages/django/core/handlers/base.py", line 128, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/kapil/venv36/lib/python3.6/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/kapil/PycharmProjects/django_project/configuration/views.py", line 146, in show_results
+    return jsonify(errorMessage=msg, error=True)
+  File "/home/kapil/venv36/lib/python3.6/site-packages/flask/json/__init__.py", line 309, in jsonify
+    if current_app.config['JSONIFY_PRETTYPRINT_REGULAR'] or current_app.debug:
+  File "/home/kapil/venv36/lib/python3.6/site-packages/werkzeug/local.py", line 347, in __getattr__
+    return getattr(self._get_current_object(), name)
+  File "/home/kapil/venv36/lib/python3.6/site-packages/werkzeug/local.py", line 306, in _get_current_object
+    return self.__local()
+  File "/home/kapil/venv36/lib/python3.6/site-packages/flask/globals.py", line 51, in _find_app
+    raise RuntimeError(_app_ctx_err_msg)
+RuntimeError: Working outside of application context.
+
+This typically means that you attempted to use functionality that needed
+to interface with the current application object in some way. To solve
+this, set up an application context with app.app_context().  See the
+documentation for more information.
+[ERROR]: [05/29/2018 05:48:24 AM] [file : configuration.VerticaPythonConnectionPackage.connection, Severity: b'ERROR', Message: b'Syntax error at or near "all"', Sqlstate: b'42601', Position: b'15', Routine: b'base_yyerror', File: b'/scratch_a/release/svrtar18364/vbuild/vertica/Parser/scan.l', Line: b'1043', SQL: 'select * from all;']
+[ERROR]: [05/29/2018 05:48:25 AM] [Internal Server Error: /action/showresults/]
+Traceback (most recent call last):
+  File "/home/kapil/PycharmProjects/django_project/configuration/VerticaPythonConnectionPackage/connection.py", line 36, in read_data
+    self.execute(query)
+  File "/home/kapil/venv36/lib/python3.6/site-packages/vertica_python/vertica/cursor.py", line 116, in execute
+    raise errors.QueryError.from_error_response(self._message, operation)
+vertica_python.errors.VerticaSyntaxError: Severity: b'ERROR', Message: b'Syntax error at or near "all"', Sqlstate: b'42601', Position: b'15', Routine: b'base_yyerror', File: b'/scratch_a/release/svrtar18364/vbuild/vertica/Parser/scan.l', Line: b'1043', SQL: 'select * from all;'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/kapil/PycharmProjects/django_project/configuration/views.py", line 139, in show_results
+    data = json.dumps(vp.read_data(a), default=myconverter)
+  File "/home/kapil/PycharmProjects/django_project/configuration/VerticaPythonConnectionPackage/connection.py", line 41, in read_data
+    self.execute(query, )
+  File "/home/kapil/venv36/lib/python3.6/site-packages/vertica_python/vertica/cursor.py", line 116, in execute
+    raise errors.QueryError.from_error_response(self._message, operation)
+vertica_python.errors.VerticaSyntaxError: Severity: b'ERROR', Message: b'Syntax error at or near "all"', Sqlstate: b'42601', Position: b'15', Routine: b'base_yyerror', File: b'/scratch_a/release/svrtar18364/vbuild/vertica/Parser/scan.l', Line: b'1043', SQL: 'select * from all;'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/kapil/venv36/lib/python3.6/site-packages/django/core/handlers/exception.py", line 35, in inner
+    response = get_response(request)
+  File "/home/kapil/venv36/lib/python3.6/site-packages/django/core/handlers/base.py", line 128, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/kapil/venv36/lib/python3.6/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/kapil/PycharmProjects/django_project/configuration/views.py", line 146, in show_results
+    return jsonify(errorMessage=msg, error=True)
+  File "/home/kapil/venv36/lib/python3.6/site-packages/flask/json/__init__.py", line 309, in jsonify
+    if current_app.config['JSONIFY_PRETTYPRINT_REGULAR'] or current_app.debug:
+  File "/home/kapil/venv36/lib/python3.6/site-packages/werkzeug/local.py", line 347, in __getattr__
+    return getattr(self._get_current_object(), name)
+  File "/home/kapil/venv36/lib/python3.6/site-packages/werkzeug/local.py", line 306, in _get_current_object
+    return self.__local()
+  File "/home/kapil/venv36/lib/python3.6/site-packages/flask/globals.py", line 51, in _find_app
+    raise RuntimeError(_app_ctx_err_msg)
+RuntimeError: Working outside of application context.
+
+This typically means that you attempted to use functionality that needed
+to interface with the current application object in some way. To solve
+this, set up an application context with app.app_context().  See the
+documentation for more information.
+[ERROR]: [05/29/2018 05:48:26 AM] [file : configuration.VerticaPythonConnectionPackage.connection, Severity: b'ERROR', Message: b'Syntax error at or near "all"', Sqlstate: b'42601', Position: b'15', Routine: b'base_yyerror', File: b'/scratch_a/release/svrtar18364/vbuild/vertica/Parser/scan.l', Line: b'1043', SQL: 'select * from all;']
+[ERROR]: [05/29/2018 05:48:26 AM] [Internal Server Error: /action/showresults/]
+Traceback (most recent call last):
+  File "/home/kapil/PycharmProjects/django_project/configuration/VerticaPythonConnectionPackage/connection.py", line 36, in read_data
+    self.execute(query)
+  File "/home/kapil/venv36/lib/python3.6/site-packages/vertica_python/vertica/cursor.py", line 116, in execute
+    raise errors.QueryError.from_error_response(self._message, operation)
+vertica_python.errors.VerticaSyntaxError: Severity: b'ERROR', Message: b'Syntax error at or near "all"', Sqlstate: b'42601', Position: b'15', Routine: b'base_yyerror', File: b'/scratch_a/release/svrtar18364/vbuild/vertica/Parser/scan.l', Line: b'1043', SQL: 'select * from all;'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/kapil/PycharmProjects/django_project/configuration/views.py", line 139, in show_results
+    data = json.dumps(vp.read_data(a), default=myconverter)
+  File "/home/kapil/PycharmProjects/django_project/configuration/VerticaPythonConnectionPackage/connection.py", line 41, in read_data
+    self.execute(query, )
+  File "/home/kapil/venv36/lib/python3.6/site-packages/vertica_python/vertica/cursor.py", line 116, in execute
+    raise errors.QueryError.from_error_response(self._message, operation)
+vertica_python.errors.VerticaSyntaxError: Severity: b'ERROR', Message: b'Syntax error at or near "all"', Sqlstate: b'42601', Position: b'15', Routine: b'base_yyerror', File: b'/scratch_a/release/svrtar18364/vbuild/vertica/Parser/scan.l', Line: b'1043', SQL: 'select * from all;'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/kapil/venv36/lib/python3.6/site-packages/django/core/handlers/exception.py", line 35, in inner
+    response = get_response(request)
+  File "/home/kapil/venv36/lib/python3.6/site-packages/django/core/handlers/base.py", line 128, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/kapil/venv36/lib/python3.6/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/kapil/PycharmProjects/django_project/configuration/views.py", line 146, in show_results
+    return jsonify(errorMessage=msg, error=True)
+  File "/home/kapil/venv36/lib/python3.6/site-packages/flask/json/__init__.py", line 309, in jsonify
+    if current_app.config['JSONIFY_PRETTYPRINT_REGULAR'] or current_app.debug:
+  File "/home/kapil/venv36/lib/python3.6/site-packages/werkzeug/local.py", line 347, in __getattr__
+    return getattr(self._get_current_object(), name)
+  File "/home/kapil/venv36/lib/python3.6/site-packages/werkzeug/local.py", line 306, in _get_current_object
+    return self.__local()
+  File "/home/kapil/venv36/lib/python3.6/site-packages/flask/globals.py", line 51, in _find_app
+    raise RuntimeError(_app_ctx_err_msg)
+RuntimeError: Working outside of application context.
+
+This typically means that you attempted to use functionality that needed
+to interface with the current application object in some way. To solve
+this, set up an application context with app.app_context().  See the
+documentation for more information.
+[ERROR]: [05/29/2018 05:53:52 AM] [file : configuration.VerticaPythonConnectionPackage.connection, Severity: b'ERROR', Message: b'Syntax error at or near "all"', Sqlstate: b'42601', Position: b'15', Routine: b'base_yyerror', File: b'/scratch_a/release/svrtar18364/vbuild/vertica/Parser/scan.l', Line: b'1043', SQL: 'select * from all;']
+[ERROR]: [05/29/2018 05:53:52 AM] [Internal Server Error: /action/showresults/]
+Traceback (most recent call last):
+  File "/home/kapil/PycharmProjects/django_project/configuration/VerticaPythonConnectionPackage/connection.py", line 36, in read_data
+    self.execute(query)
+  File "/home/kapil/venv36/lib/python3.6/site-packages/vertica_python/vertica/cursor.py", line 116, in execute
+    raise errors.QueryError.from_error_response(self._message, operation)
+vertica_python.errors.VerticaSyntaxError: Severity: b'ERROR', Message: b'Syntax error at or near "all"', Sqlstate: b'42601', Position: b'15', Routine: b'base_yyerror', File: b'/scratch_a/release/svrtar18364/vbuild/vertica/Parser/scan.l', Line: b'1043', SQL: 'select * from all;'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/kapil/PycharmProjects/django_project/configuration/views.py", line 139, in show_results
+    data = json.dumps(vp.read_data(a), default=myconverter)
+  File "/home/kapil/PycharmProjects/django_project/configuration/VerticaPythonConnectionPackage/connection.py", line 41, in read_data
+    self.execute(query, )
+  File "/home/kapil/venv36/lib/python3.6/site-packages/vertica_python/vertica/cursor.py", line 116, in execute
+    raise errors.QueryError.from_error_response(self._message, operation)
+vertica_python.errors.VerticaSyntaxError: Severity: b'ERROR', Message: b'Syntax error at or near "all"', Sqlstate: b'42601', Position: b'15', Routine: b'base_yyerror', File: b'/scratch_a/release/svrtar18364/vbuild/vertica/Parser/scan.l', Line: b'1043', SQL: 'select * from all;'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/kapil/venv36/lib/python3.6/site-packages/django/core/handlers/exception.py", line 35, in inner
+    response = get_response(request)
+  File "/home/kapil/venv36/lib/python3.6/site-packages/django/core/handlers/base.py", line 128, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/kapil/venv36/lib/python3.6/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/kapil/PycharmProjects/django_project/configuration/views.py", line 146, in show_results
+    return json.dumps(errorMessage=msg, error=True)
+TypeError: dumps() missing 1 required positional argument: 'obj'
+[ERROR]: [05/29/2018 05:53:56 AM] [file : configuration.VerticaPythonConnectionPackage.connection, Severity: b'ERROR', Message: b'Syntax error at or near "all"', Sqlstate: b'42601', Position: b'15', Routine: b'base_yyerror', File: b'/scratch_a/release/svrtar18364/vbuild/vertica/Parser/scan.l', Line: b'1043', SQL: 'select * from all;']
+[ERROR]: [05/29/2018 05:53:57 AM] [Internal Server Error: /action/showresults/]
+Traceback (most recent call last):
+  File "/home/kapil/PycharmProjects/django_project/configuration/VerticaPythonConnectionPackage/connection.py", line 36, in read_data
+    self.execute(query)
+  File "/home/kapil/venv36/lib/python3.6/site-packages/vertica_python/vertica/cursor.py", line 116, in execute
+    raise errors.QueryError.from_error_response(self._message, operation)
+vertica_python.errors.VerticaSyntaxError: Severity: b'ERROR', Message: b'Syntax error at or near "all"', Sqlstate: b'42601', Position: b'15', Routine: b'base_yyerror', File: b'/scratch_a/release/svrtar18364/vbuild/vertica/Parser/scan.l', Line: b'1043', SQL: 'select * from all;'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/kapil/PycharmProjects/django_project/configuration/views.py", line 139, in show_results
+    data = json.dumps(vp.read_data(a), default=myconverter)
+  File "/home/kapil/PycharmProjects/django_project/configuration/VerticaPythonConnectionPackage/connection.py", line 41, in read_data
+    self.execute(query, )
+  File "/home/kapil/venv36/lib/python3.6/site-packages/vertica_python/vertica/cursor.py", line 116, in execute
+    raise errors.QueryError.from_error_response(self._message, operation)
+vertica_python.errors.VerticaSyntaxError: Severity: b'ERROR', Message: b'Syntax error at or near "all"', Sqlstate: b'42601', Position: b'15', Routine: b'base_yyerror', File: b'/scratch_a/release/svrtar18364/vbuild/vertica/Parser/scan.l', Line: b'1043', SQL: 'select * from all;'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/kapil/venv36/lib/python3.6/site-packages/django/core/handlers/exception.py", line 35, in inner
+    response = get_response(request)
+  File "/home/kapil/venv36/lib/python3.6/site-packages/django/core/handlers/base.py", line 128, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/kapil/venv36/lib/python3.6/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/kapil/PycharmProjects/django_project/configuration/views.py", line 146, in show_results
+    return json.dumps(errorMessage=msg, error=True)
+TypeError: dumps() missing 1 required positional argument: 'obj'
+[ERROR]: [05/29/2018 06:01:09 AM] [file : configuration.VerticaPythonConnectionPackage.connection, Severity: b'ERROR', Message: b'Syntax error at or near "all"', Sqlstate: b'42601', Position: b'15', Routine: b'base_yyerror', File: b'/scratch_a/release/svrtar18364/vbuild/vertica/Parser/scan.l', Line: b'1043', SQL: 'select * from all;']
+[ERROR]: [05/29/2018 06:01:10 AM] [Internal Server Error: /action/showresults/]
+Traceback (most recent call last):
+  File "/home/kapil/PycharmProjects/django_project/configuration/VerticaPythonConnectionPackage/connection.py", line 36, in read_data
+    self.execute(query)
+  File "/home/kapil/venv36/lib/python3.6/site-packages/vertica_python/vertica/cursor.py", line 116, in execute
+    raise errors.QueryError.from_error_response(self._message, operation)
+vertica_python.errors.VerticaSyntaxError: Severity: b'ERROR', Message: b'Syntax error at or near "all"', Sqlstate: b'42601', Position: b'15', Routine: b'base_yyerror', File: b'/scratch_a/release/svrtar18364/vbuild/vertica/Parser/scan.l', Line: b'1043', SQL: 'select * from all;'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/kapil/PycharmProjects/django_project/configuration/views.py", line 139, in show_results
+    data = json.dumps(vp.read_data(a), default=myconverter)
+  File "/home/kapil/PycharmProjects/django_project/configuration/VerticaPythonConnectionPackage/connection.py", line 41, in read_data
+    self.execute(query, )
+  File "/home/kapil/venv36/lib/python3.6/site-packages/vertica_python/vertica/cursor.py", line 116, in execute
+    raise errors.QueryError.from_error_response(self._message, operation)
+vertica_python.errors.VerticaSyntaxError: Severity: b'ERROR', Message: b'Syntax error at or near "all"', Sqlstate: b'42601', Position: b'15', Routine: b'base_yyerror', File: b'/scratch_a/release/svrtar18364/vbuild/vertica/Parser/scan.l', Line: b'1043', SQL: 'select * from all;'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/kapil/venv36/lib/python3.6/site-packages/django/core/handlers/exception.py", line 35, in inner
+    response = get_response(request)
+  File "/home/kapil/venv36/lib/python3.6/site-packages/django/core/handlers/base.py", line 128, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/kapil/venv36/lib/python3.6/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/kapil/PycharmProjects/django_project/configuration/views.py", line 146, in show_results
+    return HttpResponse(json.dumps(errorMessage=msg, error=True))
+TypeError: dumps() missing 1 required positional argument: 'obj'
+[ERROR]: [05/29/2018 06:02:06 AM] [file : configuration.VerticaPythonConnectionPackage.connection, Severity: b'ERROR', Message: b'Syntax error at or near "all"', Sqlstate: b'42601', Position: b'15', Routine: b'base_yyerror', File: b'/scratch_a/release/svrtar18364/vbuild/vertica/Parser/scan.l', Line: b'1043', SQL: 'select * from all;']
+[ERROR]: [05/29/2018 06:02:07 AM] [Internal Server Error: /action/showresults/]
+Traceback (most recent call last):
+  File "/home/kapil/PycharmProjects/django_project/configuration/VerticaPythonConnectionPackage/connection.py", line 36, in read_data
+    self.execute(query)
+  File "/home/kapil/venv36/lib/python3.6/site-packages/vertica_python/vertica/cursor.py", line 116, in execute
+    raise errors.QueryError.from_error_response(self._message, operation)
+vertica_python.errors.VerticaSyntaxError: Severity: b'ERROR', Message: b'Syntax error at or near "all"', Sqlstate: b'42601', Position: b'15', Routine: b'base_yyerror', File: b'/scratch_a/release/svrtar18364/vbuild/vertica/Parser/scan.l', Line: b'1043', SQL: 'select * from all;'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/kapil/PycharmProjects/django_project/configuration/views.py", line 139, in show_results
+    data = json.dumps(vp.read_data(a), default=myconverter)
+  File "/home/kapil/PycharmProjects/django_project/configuration/VerticaPythonConnectionPackage/connection.py", line 41, in read_data
+    self.execute(query, )
+  File "/home/kapil/venv36/lib/python3.6/site-packages/vertica_python/vertica/cursor.py", line 116, in execute
+    raise errors.QueryError.from_error_response(self._message, operation)
+vertica_python.errors.VerticaSyntaxError: Severity: b'ERROR', Message: b'Syntax error at or near "all"', Sqlstate: b'42601', Position: b'15', Routine: b'base_yyerror', File: b'/scratch_a/release/svrtar18364/vbuild/vertica/Parser/scan.l', Line: b'1043', SQL: 'select * from all;'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/kapil/venv36/lib/python3.6/site-packages/django/core/handlers/exception.py", line 35, in inner
+    response = get_response(request)
+  File "/home/kapil/venv36/lib/python3.6/site-packages/django/core/handlers/base.py", line 128, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/kapil/venv36/lib/python3.6/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/kapil/PycharmProjects/django_project/configuration/views.py", line 146, in show_results
+    return HttpResponse(json.dumps(obj=msg, error=True))
+  File "/home/kapil/anaconda3/lib/python3.6/json/__init__.py", line 238, in dumps
+    **kw).encode(obj)
+TypeError: __init__() got an unexpected keyword argument 'error'
+[WARNING]: [05/29/2018 06:17:03 AM] [Not Found: /action/formula1/showresults]
+[WARNING]: [05/29/2018 06:17:31 AM] [Not Found: /action/formula1/showresults]
+[WARNING]: [05/29/2018 06:18:53 AM] [Not Found: /action/formula1/showresults]
+[ERROR]: [05/29/2018 06:19:00 AM] [file : configuration.VerticaPythonConnectionPackage.connection, Severity: b'ERROR', Message: b'Syntax error at or near "all"', Sqlstate: b'42601', Position: b'15', Routine: b'base_yyerror', File: b'/scratch_a/release/svrtar18364/vbuild/vertica/Parser/scan.l', Line: b'1043', SQL: 'select * from all;']
+[ERROR]: [05/29/2018 06:19:01 AM] [Internal Server Error: /action/showresults/]
+Traceback (most recent call last):
+  File "/home/kapil/PycharmProjects/django_project/configuration/VerticaPythonConnectionPackage/connection.py", line 36, in read_data
+    self.execute(query)
+  File "/home/kapil/venv36/lib/python3.6/site-packages/vertica_python/vertica/cursor.py", line 116, in execute
+    raise errors.QueryError.from_error_response(self._message, operation)
+vertica_python.errors.VerticaSyntaxError: Severity: b'ERROR', Message: b'Syntax error at or near "all"', Sqlstate: b'42601', Position: b'15', Routine: b'base_yyerror', File: b'/scratch_a/release/svrtar18364/vbuild/vertica/Parser/scan.l', Line: b'1043', SQL: 'select * from all;'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/kapil/PycharmProjects/django_project/configuration/views.py", line 139, in show_results
+    data = json.dumps(vp.read_data(a), default=myconverter)
+  File "/home/kapil/PycharmProjects/django_project/configuration/VerticaPythonConnectionPackage/connection.py", line 41, in read_data
+    self.execute(query, )
+  File "/home/kapil/venv36/lib/python3.6/site-packages/vertica_python/vertica/cursor.py", line 116, in execute
+    raise errors.QueryError.from_error_response(self._message, operation)
+vertica_python.errors.VerticaSyntaxError: Severity: b'ERROR', Message: b'Syntax error at or near "all"', Sqlstate: b'42601', Position: b'15', Routine: b'base_yyerror', File: b'/scratch_a/release/svrtar18364/vbuild/vertica/Parser/scan.l', Line: b'1043', SQL: 'select * from all;'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/kapil/venv36/lib/python3.6/site-packages/django/core/handlers/exception.py", line 35, in inner
+    response = get_response(request)
+  File "/home/kapil/venv36/lib/python3.6/site-packages/django/core/handlers/base.py", line 128, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/kapil/venv36/lib/python3.6/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/kapil/PycharmProjects/django_project/configuration/views.py", line 146, in show_results
+    return JsonResponse(json.dumps(errorMessage=msg, error=True))
+TypeError: dumps() missing 1 required positional argument: 'obj'
+[ERROR]: [05/29/2018 06:20:02 AM] [file : configuration.VerticaPythonConnectionPackage.connection, Severity: b'ERROR', Message: b'Syntax error at or near "all"', Sqlstate: b'42601', Position: b'15', Routine: b'base_yyerror', File: b'/scratch_a/release/svrtar18364/vbuild/vertica/Parser/scan.l', Line: b'1043', SQL: 'select * from all;']
+[ERROR]: [05/29/2018 06:20:02 AM] [Internal Server Error: /action/showresults/]
+Traceback (most recent call last):
+  File "/home/kapil/PycharmProjects/django_project/configuration/VerticaPythonConnectionPackage/connection.py", line 36, in read_data
+    self.execute(query)
+  File "/home/kapil/venv36/lib/python3.6/site-packages/vertica_python/vertica/cursor.py", line 116, in execute
+    raise errors.QueryError.from_error_response(self._message, operation)
+vertica_python.errors.VerticaSyntaxError: Severity: b'ERROR', Message: b'Syntax error at or near "all"', Sqlstate: b'42601', Position: b'15', Routine: b'base_yyerror', File: b'/scratch_a/release/svrtar18364/vbuild/vertica/Parser/scan.l', Line: b'1043', SQL: 'select * from all;'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/kapil/PycharmProjects/django_project/configuration/views.py", line 139, in show_results
+    data = json.dumps(vp.read_data(a), default=myconverter)
+  File "/home/kapil/PycharmProjects/django_project/configuration/VerticaPythonConnectionPackage/connection.py", line 41, in read_data
+    self.execute(query, )
+  File "/home/kapil/venv36/lib/python3.6/site-packages/vertica_python/vertica/cursor.py", line 116, in execute
+    raise errors.QueryError.from_error_response(self._message, operation)
+vertica_python.errors.VerticaSyntaxError: Severity: b'ERROR', Message: b'Syntax error at or near "all"', Sqlstate: b'42601', Position: b'15', Routine: b'base_yyerror', File: b'/scratch_a/release/svrtar18364/vbuild/vertica/Parser/scan.l', Line: b'1043', SQL: 'select * from all;'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/kapil/venv36/lib/python3.6/site-packages/django/core/handlers/exception.py", line 35, in inner
+    response = get_response(request)
+  File "/home/kapil/venv36/lib/python3.6/site-packages/django/core/handlers/base.py", line 128, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/kapil/venv36/lib/python3.6/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/kapil/PycharmProjects/django_project/configuration/views.py", line 146, in show_results
+    return JsonResponse(errorMessage=msg, error=True)
+TypeError: __init__() missing 1 required positional argument: 'data'
+[ERROR]: [05/29/2018 06:20:38 AM] [file : configuration.VerticaPythonConnectionPackage.connection, Severity: b'ERROR', Message: b'Syntax error at or near "all"', Sqlstate: b'42601', Position: b'15', Routine: b'base_yyerror', File: b'/scratch_a/release/svrtar18364/vbuild/vertica/Parser/scan.l', Line: b'1043', SQL: 'select * from all;']
+[ERROR]: [05/29/2018 06:20:40 AM] [Internal Server Error: /action/showresults/]
+Traceback (most recent call last):
+  File "/home/kapil/PycharmProjects/django_project/configuration/VerticaPythonConnectionPackage/connection.py", line 36, in read_data
+    self.execute(query)
+  File "/home/kapil/venv36/lib/python3.6/site-packages/vertica_python/vertica/cursor.py", line 116, in execute
+    raise errors.QueryError.from_error_response(self._message, operation)
+vertica_python.errors.VerticaSyntaxError: Severity: b'ERROR', Message: b'Syntax error at or near "all"', Sqlstate: b'42601', Position: b'15', Routine: b'base_yyerror', File: b'/scratch_a/release/svrtar18364/vbuild/vertica/Parser/scan.l', Line: b'1043', SQL: 'select * from all;'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/kapil/PycharmProjects/django_project/configuration/views.py", line 139, in show_results
+    data = json.dumps(vp.read_data(a), default=myconverter)
+  File "/home/kapil/PycharmProjects/django_project/configuration/VerticaPythonConnectionPackage/connection.py", line 41, in read_data
+    self.execute(query, )
+  File "/home/kapil/venv36/lib/python3.6/site-packages/vertica_python/vertica/cursor.py", line 116, in execute
+    raise errors.QueryError.from_error_response(self._message, operation)
+vertica_python.errors.VerticaSyntaxError: Severity: b'ERROR', Message: b'Syntax error at or near "all"', Sqlstate: b'42601', Position: b'15', Routine: b'base_yyerror', File: b'/scratch_a/release/svrtar18364/vbuild/vertica/Parser/scan.l', Line: b'1043', SQL: 'select * from all;'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/kapil/venv36/lib/python3.6/site-packages/django/core/handlers/exception.py", line 35, in inner
+    response = get_response(request)
+  File "/home/kapil/venv36/lib/python3.6/site-packages/django/core/handlers/base.py", line 128, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/kapil/venv36/lib/python3.6/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/kapil/PycharmProjects/django_project/configuration/views.py", line 146, in show_results
+    return JsonResponse(data=msg, error=True)
+  File "/home/kapil/venv36/lib/python3.6/site-packages/django/http/response.py", line 503, in __init__
+    'In order to allow non-dict objects to be serialized set the '
+TypeError: In order to allow non-dict objects to be serialized set the safe parameter to False.
+[ERROR]: [05/29/2018 06:21:27 AM] [file : configuration.VerticaPythonConnectionPackage.connection, Severity: b'ERROR', Message: b'Syntax error at or near "all"', Sqlstate: b'42601', Position: b'15', Routine: b'base_yyerror', File: b'/scratch_a/release/svrtar18364/vbuild/vertica/Parser/scan.l', Line: b'1043', SQL: 'select * from all;']
+[ERROR]: [05/29/2018 06:21:28 AM] [Internal Server Error: /action/showresults/]
+Traceback (most recent call last):
+  File "/home/kapil/PycharmProjects/django_project/configuration/VerticaPythonConnectionPackage/connection.py", line 36, in read_data
+    self.execute(query)
+  File "/home/kapil/venv36/lib/python3.6/site-packages/vertica_python/vertica/cursor.py", line 116, in execute
+    raise errors.QueryError.from_error_response(self._message, operation)
+vertica_python.errors.VerticaSyntaxError: Severity: b'ERROR', Message: b'Syntax error at or near "all"', Sqlstate: b'42601', Position: b'15', Routine: b'base_yyerror', File: b'/scratch_a/release/svrtar18364/vbuild/vertica/Parser/scan.l', Line: b'1043', SQL: 'select * from all;'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/kapil/PycharmProjects/django_project/configuration/views.py", line 139, in show_results
+    data = json.dumps(vp.read_data(a), default=myconverter)
+  File "/home/kapil/PycharmProjects/django_project/configuration/VerticaPythonConnectionPackage/connection.py", line 41, in read_data
+    self.execute(query, )
+  File "/home/kapil/venv36/lib/python3.6/site-packages/vertica_python/vertica/cursor.py", line 116, in execute
+    raise errors.QueryError.from_error_response(self._message, operation)
+vertica_python.errors.VerticaSyntaxError: Severity: b'ERROR', Message: b'Syntax error at or near "all"', Sqlstate: b'42601', Position: b'15', Routine: b'base_yyerror', File: b'/scratch_a/release/svrtar18364/vbuild/vertica/Parser/scan.l', Line: b'1043', SQL: 'select * from all;'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/kapil/venv36/lib/python3.6/site-packages/django/core/handlers/exception.py", line 35, in inner
+    response = get_response(request)
+  File "/home/kapil/venv36/lib/python3.6/site-packages/django/core/handlers/base.py", line 128, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/kapil/venv36/lib/python3.6/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/kapil/PycharmProjects/django_project/configuration/views.py", line 146, in show_results
+    return JsonResponse(data=msg, error=True, safe=False)
+  File "/home/kapil/venv36/lib/python3.6/site-packages/django/http/response.py", line 510, in __init__
+    super().__init__(content=data, **kwargs)
+  File "/home/kapil/venv36/lib/python3.6/site-packages/django/http/response.py", line 283, in __init__
+    super().__init__(*args, **kwargs)
+TypeError: __init__() got an unexpected keyword argument 'error'
+[ERROR]: [05/29/2018 06:22:20 AM] [file : configuration.VerticaPythonConnectionPackage.connection, Severity: b'ERROR', Message: b'Syntax error at or near "all"', Sqlstate: b'42601', Position: b'15', Routine: b'base_yyerror', File: b'/scratch_a/release/svrtar18364/vbuild/vertica/Parser/scan.l', Line: b'1043', SQL: 'select * from all;']
+[WARNING]: [05/29/2018 06:24:38 AM] [Not Found: /favicon.ico]
+[ERROR]: [05/29/2018 06:24:50 AM] [file : configuration.VerticaPythonConnectionPackage.connection, Severity: b'ERROR', Message: b'Syntax error at or near "slect"', Sqlstate: b'42601', Position: b'1', Routine: b'base_yyerror', File: b'/scratch_a/release/svrtar18364/vbuild/vertica/Parser/scan.l', Line: b'1043', SQL: 'slect']
+[ERROR]: [05/29/2018 06:28:33 AM] [file : configuration.VerticaPythonConnectionPackage.connection, Severity: b'ERROR', Message: b'Syntax error at or near "slect"', Sqlstate: b'42601', Position: b'1', Routine: b'base_yyerror', File: b'/scratch_a/release/svrtar18364/vbuild/vertica/Parser/scan.l', Line: b'1043', SQL: 'slect']
+[ERROR]: [05/29/2018 06:42:52 AM] [file : configuration.VerticaPythonConnectionPackage.connection, Severity: b'ERROR', Message: b'Syntax error at or near "slect"', Sqlstate: b'42601', Position: b'1', Routine: b'base_yyerror', File: b'/scratch_a/release/svrtar18364/vbuild/vertica/Parser/scan.l', Line: b'1043', SQL: 'slect']
+[ERROR]: [05/29/2018 06:44:36 AM] [file : configuration.VerticaPythonConnectionPackage.connection, Severity: b'ERROR', Message: b'Syntax error at or near "slect"', Sqlstate: b'42601', Position: b'1', Routine: b'base_yyerror', File: b'/scratch_a/release/svrtar18364/vbuild/vertica/Parser/scan.l', Line: b'1043', SQL: 'slect']
+[ERROR]: [05/29/2018 06:46:02 AM] [file : configuration.VerticaPythonConnectionPackage.connection, Severity: b'ERROR', Message: b'Syntax error at or near "slectaa"', Sqlstate: b'42601', Position: b'1', Routine: b'base_yyerror', File: b'/scratch_a/release/svrtar18364/vbuild/vertica/Parser/scan.l', Line: b'1043', SQL: 'slectaa']
+[ERROR]: [05/29/2018 07:26:43 AM] [file : configuration.VerticaPythonConnectionPackage.connection, Severity: b'ERROR', Message: b'Syntax error at or near "ddd"', Sqlstate: b'42601', Position: b'1', Routine: b'base_yyerror', File: b'/scratch_a/release/svrtar18364/vbuild/vertica/Parser/scan.l', Line: b'1043', SQL: 'ddd']
+[WARNING]: [05/29/2018 07:28:45 AM] [Not Found: /favicon.ico]
+[ERROR]: [05/29/2018 07:28:50 AM] [file : configuration.VerticaPythonConnectionPackage.connection, Severity: b'ERROR', Message: b'Syntax error at or near "ddd"', Sqlstate: b'42601', Position: b'1', Routine: b'base_yyerror', File: b'/scratch_a/release/svrtar18364/vbuild/vertica/Parser/scan.l', Line: b'1043', SQL: 'ddd']
+[WARNING]: [05/29/2018 07:29:51 AM] [Not Found: /favicon.ico]
+[WARNING]: [05/29/2018 07:29:51 AM] [Not Found: /favicon.ico]
+[WARNING]: [05/29/2018 07:29:52 AM] [Not Found: /favicon.ico]
+[ERROR]: [05/29/2018 07:34:16 AM] [file : configuration.VerticaPythonConnectionPackage.connection, Severity: b'ERROR', Message: b'Syntax error at or near "dfd"', Sqlstate: b'42601', Position: b'1', Routine: b'base_yyerror', File: b'/scratch_a/release/svrtar18364/vbuild/vertica/Parser/scan.l', Line: b'1043', SQL: 'dfd']
+[ERROR]: [05/29/2018 07:36:54 AM] [file : configuration.VerticaPythonConnectionPackage.connection, Severity: b'ERROR', Message: b'Syntax error at or near "ddd"', Sqlstate: b'42601', Position: b'1', Routine: b'base_yyerror', File: b'/scratch_a/release/svrtar18364/vbuild/vertica/Parser/scan.l', Line: b'1043', SQL: 'ddd']
+[ERROR]: [05/29/2018 07:37:34 AM] [file : configuration.VerticaPythonConnectionPackage.connection, Severity: b'ERROR', Message: b'Syntax error at or near "dd"', Sqlstate: b'42601', Position: b'1', Routine: b'base_yyerror', File: b'/scratch_a/release/svrtar18364/vbuild/vertica/Parser/scan.l', Line: b'1043', SQL: 'dd']
+[ERROR]: [05/29/2018 07:37:56 AM] [file : configuration.VerticaPythonConnectionPackage.connection, Severity: b'ERROR', Message: b'Syntax error at or near "ss"', Sqlstate: b'42601', Position: b'1', Routine: b'base_yyerror', File: b'/scratch_a/release/svrtar18364/vbuild/vertica/Parser/scan.l', Line: b'1043', SQL: 'ss']
+[ERROR]: [05/29/2018 07:38:06 AM] [file : configuration.VerticaPythonConnectionPackage.connection, Severity: b'ERROR', Message: b'Syntax error at or near "dgg"', Sqlstate: b'42601', Position: b'1', Routine: b'base_yyerror', File: b'/scratch_a/release/svrtar18364/vbuild/vertica/Parser/scan.l', Line: b'1043', SQL: 'dgg']
+[WARNING]: [05/29/2018 07:44:58 AM] [Not Found: /]
+[WARNING]: [05/29/2018 07:55:03 AM] [Not Found: /favicon.ico]
+[WARNING]: [05/29/2018 07:57:26 AM] [Not Found: /favicon.ico]
+[WARNING]: [05/29/2018 08:44:03 AM] [Not Found: /action/formula1/showresults]
+[WARNING]: [05/29/2018 08:44:35 AM] [Not Found: /action/formula1/action/showresults]
+[ERROR]: [05/29/2018 08:54:56 AM] [file : configuration.VerticaPythonConnectionPackage.connection, Severity: b'ERROR', Message: b'Syntax error at or near "cc"', Sqlstate: b'42601', Position: b'1', Routine: b'base_yyerror', File: b'/scratch_a/release/svrtar18364/vbuild/vertica/Parser/scan.l', Line: b'1043', SQL: 'cc']
+[WARNING]: [05/29/2018 09:01:35 AM] [Not Found: /favicon.ico]
+[WARNING]: [05/29/2018 09:16:24 AM] [Not Found: /favicon.ico]
+[WARNING]: [05/29/2018 09:16:39 AM] [Not Found: /favicon.ico]
+[WARNING]: [05/29/2018 09:16:52 AM] [Not Found: /favicon.ico]
+[ERROR]: [05/29/2018 09:47:51 AM] [Internal Server Error: /action/show/]
+Traceback (most recent call last):
+  File "/home/kapil/venv36/lib/python3.6/site-packages/django/core/handlers/exception.py", line 35, in inner
+    response = get_response(request)
+  File "/home/kapil/venv36/lib/python3.6/site-packages/django/core/handlers/base.py", line 128, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/kapil/venv36/lib/python3.6/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/kapil/PycharmProjects/django_project/configuration/views.py", line 66, in show_me
+    return render(HttpResponse, 'admin/configure_changelist.html')
+  File "/home/kapil/venv36/lib/python3.6/site-packages/django/shortcuts.py", line 36, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/home/kapil/venv36/lib/python3.6/site-packages/django/template/loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "/home/kapil/venv36/lib/python3.6/site-packages/django/template/backends/django.py", line 61, in render
+    return self.template.render(context)
+  File "/home/kapil/venv36/lib/python3.6/site-packages/django/template/base.py", line 173, in render
+    with context.bind_template(self):
+  File "/home/kapil/anaconda3/lib/python3.6/contextlib.py", line 81, in __enter__
+    return next(self.gen)
+  File "/home/kapil/venv36/lib/python3.6/site-packages/django/template/context.py", line 250, in bind_template
+    updates.update(processor(self.request))
+  File "/home/kapil/venv36/lib/python3.6/site-packages/django/template/context_processors.py", line 40, in debug
+    if settings.DEBUG and request.META.get('REMOTE_ADDR') in settings.INTERNAL_IPS:
+AttributeError: type object 'HttpResponse' has no attribute 'META'
+[ERROR]: [05/29/2018 09:48:26 AM] [Internal Server Error: /action/show/]
+Traceback (most recent call last):
+  File "/home/kapil/venv36/lib/python3.6/site-packages/django/core/handlers/exception.py", line 35, in inner
+    response = get_response(request)
+  File "/home/kapil/venv36/lib/python3.6/site-packages/django/core/handlers/base.py", line 128, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/kapil/venv36/lib/python3.6/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/kapil/PycharmProjects/django_project/configuration/views.py", line 66, in show_me
+    return render(request, 'admin/configure_changelist.html')
+  File "/home/kapil/venv36/lib/python3.6/site-packages/django/shortcuts.py", line 36, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/home/kapil/venv36/lib/python3.6/site-packages/django/template/loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "/home/kapil/venv36/lib/python3.6/site-packages/django/template/backends/django.py", line 61, in render
+    return self.template.render(context)
+  File "/home/kapil/venv36/lib/python3.6/site-packages/django/template/base.py", line 175, in render
+    return self._render(context)
+  File "/home/kapil/venv36/lib/python3.6/site-packages/django/template/base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "/home/kapil/venv36/lib/python3.6/site-packages/django/template/base.py", line 943, in render
+    bit = node.render_annotated(context)
+  File "/home/kapil/venv36/lib/python3.6/site-packages/django/template/base.py", line 910, in render_annotated
+    return self.render(context)
+  File "/home/kapil/venv36/lib/python3.6/site-packages/django/template/loader_tags.py", line 155, in render
+    return compiled_parent._render(context)
+  File "/home/kapil/venv36/lib/python3.6/site-packages/django/template/base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "/home/kapil/venv36/lib/python3.6/site-packages/django/template/base.py", line 943, in render
+    bit = node.render_annotated(context)
+  File "/home/kapil/venv36/lib/python3.6/site-packages/django/template/base.py", line 910, in render_annotated
+    return self.render(context)
+  File "/home/kapil/venv36/lib/python3.6/site-packages/django/template/loader_tags.py", line 155, in render
+    return compiled_parent._render(context)
+  File "/home/kapil/venv36/lib/python3.6/site-packages/django/template/base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "/home/kapil/venv36/lib/python3.6/site-packages/django/template/base.py", line 943, in render
+    bit = node.render_annotated(context)
+  File "/home/kapil/venv36/lib/python3.6/site-packages/django/template/base.py", line 910, in render_annotated
+    return self.render(context)
+  File "/home/kapil/venv36/lib/python3.6/site-packages/django/template/loader_tags.py", line 155, in render
+    return compiled_parent._render(context)
+  File "/home/kapil/venv36/lib/python3.6/site-packages/django/template/base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "/home/kapil/venv36/lib/python3.6/site-packages/django/template/base.py", line 943, in render
+    bit = node.render_annotated(context)
+  File "/home/kapil/venv36/lib/python3.6/site-packages/django/template/base.py", line 910, in render_annotated
+    return self.render(context)
+  File "/home/kapil/venv36/lib/python3.6/site-packages/django/template/defaulttags.py", line 314, in render
+    return nodelist.render(context)
+  File "/home/kapil/venv36/lib/python3.6/site-packages/django/template/base.py", line 943, in render
+    bit = node.render_annotated(context)
+  File "/home/kapil/venv36/lib/python3.6/site-packages/django/template/base.py", line 910, in render_annotated
+    return self.render(context)
+  File "/home/kapil/venv36/lib/python3.6/site-packages/django/template/loader_tags.py", line 67, in render
+    result = block.nodelist.render(context)
+  File "/home/kapil/venv36/lib/python3.6/site-packages/django/template/base.py", line 943, in render
+    bit = node.render_annotated(context)
+  File "/home/kapil/venv36/lib/python3.6/site-packages/django/template/base.py", line 910, in render_annotated
+    return self.render(context)
+  File "/home/kapil/venv36/lib/python3.6/site-packages/django/template/defaulttags.py", line 447, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+  File "/home/kapil/venv36/lib/python3.6/site-packages/django/urls/base.py", line 88, in reverse
+    return iri_to_uri(resolver._reverse_with_prefix(view, prefix, *args, **kwargs))
+  File "/home/kapil/venv36/lib/python3.6/site-packages/django/urls/resolvers.py", line 632, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'app_list' with keyword arguments '{'app_label': ''}' not found. 1 pattern(s) tried: ['admin\\/(?P<app_label>auth|configuration)/$']
+[ERROR]: [05/29/2018 09:48:27 AM] [Internal Server Error: /action/show/]
+Traceback (most recent call last):
+  File "/home/kapil/venv36/lib/python3.6/site-packages/django/core/handlers/exception.py", line 35, in inner
+    response = get_response(request)
+  File "/home/kapil/venv36/lib/python3.6/site-packages/django/core/handlers/base.py", line 128, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/kapil/venv36/lib/python3.6/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/kapil/PycharmProjects/django_project/configuration/views.py", line 66, in show_me
+    return render(request, 'admin/configure_changelist.html')
+  File "/home/kapil/venv36/lib/python3.6/site-packages/django/shortcuts.py", line 36, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/home/kapil/venv36/lib/python3.6/site-packages/django/template/loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "/home/kapil/venv36/lib/python3.6/site-packages/django/template/backends/django.py", line 61, in render
+    return self.template.render(context)
+  File "/home/kapil/venv36/lib/python3.6/site-packages/django/template/base.py", line 175, in render
+    return self._render(context)
+  File "/home/kapil/venv36/lib/python3.6/site-packages/django/template/base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "/home/kapil/venv36/lib/python3.6/site-packages/django/template/base.py", line 943, in render
+    bit = node.render_annotated(context)
+  File "/home/kapil/venv36/lib/python3.6/site-packages/django/template/base.py", line 910, in render_annotated
+    return self.render(context)
+  File "/home/kapil/venv36/lib/python3.6/site-packages/django/template/loader_tags.py", line 155, in render
+    return compiled_parent._render(context)
+  File "/home/kapil/venv36/lib/python3.6/site-packages/django/template/base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "/home/kapil/venv36/lib/python3.6/site-packages/django/template/base.py", line 943, in render
+    bit = node.render_annotated(context)
+  File "/home/kapil/venv36/lib/python3.6/site-packages/django/template/base.py", line 910, in render_annotated
+    return self.render(context)
+  File "/home/kapil/venv36/lib/python3.6/site-packages/django/template/loader_tags.py", line 155, in render
+    return compiled_parent._render(context)
+  File "/home/kapil/venv36/lib/python3.6/site-packages/django/template/base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "/home/kapil/venv36/lib/python3.6/site-packages/django/template/base.py", line 943, in render
+    bit = node.render_annotated(context)
+  File "/home/kapil/venv36/lib/python3.6/site-packages/django/template/base.py", line 910, in render_annotated
+    return self.render(context)
+  File "/home/kapil/venv36/lib/python3.6/site-packages/django/template/loader_tags.py", line 155, in render
+    return compiled_parent._render(context)
+  File "/home/kapil/venv36/lib/python3.6/site-packages/django/template/base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "/home/kapil/venv36/lib/python3.6/site-packages/django/template/base.py", line 943, in render
+    bit = node.render_annotated(context)
+  File "/home/kapil/venv36/lib/python3.6/site-packages/django/template/base.py", line 910, in render_annotated
+    return self.render(context)
+  File "/home/kapil/venv36/lib/python3.6/site-packages/django/template/defaulttags.py", line 314, in render
+    return nodelist.render(context)
+  File "/home/kapil/venv36/lib/python3.6/site-packages/django/template/base.py", line 943, in render
+    bit = node.render_annotated(context)
+  File "/home/kapil/venv36/lib/python3.6/site-packages/django/template/base.py", line 910, in render_annotated
+    return self.render(context)
+  File "/home/kapil/venv36/lib/python3.6/site-packages/django/template/loader_tags.py", line 67, in render
+    result = block.nodelist.render(context)
+  File "/home/kapil/venv36/lib/python3.6/site-packages/django/template/base.py", line 943, in render
+    bit = node.render_annotated(context)
+  File "/home/kapil/venv36/lib/python3.6/site-packages/django/template/base.py", line 910, in render_annotated
+    return self.render(context)
+  File "/home/kapil/venv36/lib/python3.6/site-packages/django/template/defaulttags.py", line 447, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+  File "/home/kapil/venv36/lib/python3.6/site-packages/django/urls/base.py", line 88, in reverse
+    return iri_to_uri(resolver._reverse_with_prefix(view, prefix, *args, **kwargs))
+  File "/home/kapil/venv36/lib/python3.6/site-packages/django/urls/resolvers.py", line 632, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'app_list' with keyword arguments '{'app_label': ''}' not found. 1 pattern(s) tried: ['admin\\/(?P<app_label>auth|configuration)/$']
+[ERROR]: [05/29/2018 09:48:27 AM] [Internal Server Error: /action/show/]
+Traceback (most recent call last):
+  File "/home/kapil/venv36/lib/python3.6/site-packages/django/core/handlers/exception.py", line 35, in inner
+    response = get_response(request)
+  File "/home/kapil/venv36/lib/python3.6/site-packages/django/core/handlers/base.py", line 128, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/kapil/venv36/lib/python3.6/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/kapil/PycharmProjects/django_project/configuration/views.py", line 66, in show_me
+    return render(request, 'admin/configure_changelist.html')
+  File "/home/kapil/venv36/lib/python3.6/site-packages/django/shortcuts.py", line 36, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/home/kapil/venv36/lib/python3.6/site-packages/django/template/loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "/home/kapil/venv36/lib/python3.6/site-packages/django/template/backends/django.py", line 61, in render
+    return self.template.render(context)
+  File "/home/kapil/venv36/lib/python3.6/site-packages/django/template/base.py", line 175, in render
+    return self._render(context)
+  File "/home/kapil/venv36/lib/python3.6/site-packages/django/template/base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "/home/kapil/venv36/lib/python3.6/site-packages/django/template/base.py", line 943, in render
+    bit = node.render_annotated(context)
+  File "/home/kapil/venv36/lib/python3.6/site-packages/django/template/base.py", line 910, in render_annotated
+    return self.render(context)
+  File "/home/kapil/venv36/lib/python3.6/site-packages/django/template/loader_tags.py", line 155, in render
+    return compiled_parent._render(context)
+  File "/home/kapil/venv36/lib/python3.6/site-packages/django/template/base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "/home/kapil/venv36/lib/python3.6/site-packages/django/template/base.py", line 943, in render
+    bit = node.render_annotated(context)
+  File "/home/kapil/venv36/lib/python3.6/site-packages/django/template/base.py", line 910, in render_annotated
+    return self.render(context)
+  File "/home/kapil/venv36/lib/python3.6/site-packages/django/template/loader_tags.py", line 155, in render
+    return compiled_parent._render(context)
+  File "/home/kapil/venv36/lib/python3.6/site-packages/django/template/base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "/home/kapil/venv36/lib/python3.6/site-packages/django/template/base.py", line 943, in render
+    bit = node.render_annotated(context)
+  File "/home/kapil/venv36/lib/python3.6/site-packages/django/template/base.py", line 910, in render_annotated
+    return self.render(context)
+  File "/home/kapil/venv36/lib/python3.6/site-packages/django/template/loader_tags.py", line 155, in render
+    return compiled_parent._render(context)
+  File "/home/kapil/venv36/lib/python3.6/site-packages/django/template/base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "/home/kapil/venv36/lib/python3.6/site-packages/django/template/base.py", line 943, in render
+    bit = node.render_annotated(context)
+  File "/home/kapil/venv36/lib/python3.6/site-packages/django/template/base.py", line 910, in render_annotated
+    return self.render(context)
+  File "/home/kapil/venv36/lib/python3.6/site-packages/django/template/defaulttags.py", line 314, in render
+    return nodelist.render(context)
+  File "/home/kapil/venv36/lib/python3.6/site-packages/django/template/base.py", line 943, in render
+    bit = node.render_annotated(context)
+  File "/home/kapil/venv36/lib/python3.6/site-packages/django/template/base.py", line 910, in render_annotated
+    return self.render(context)
+  File "/home/kapil/venv36/lib/python3.6/site-packages/django/template/loader_tags.py", line 67, in render
+    result = block.nodelist.render(context)
+  File "/home/kapil/venv36/lib/python3.6/site-packages/django/template/base.py", line 943, in render
+    bit = node.render_annotated(context)
+  File "/home/kapil/venv36/lib/python3.6/site-packages/django/template/base.py", line 910, in render_annotated
+    return self.render(context)
+  File "/home/kapil/venv36/lib/python3.6/site-packages/django/template/defaulttags.py", line 447, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+  File "/home/kapil/venv36/lib/python3.6/site-packages/django/urls/base.py", line 88, in reverse
+    return iri_to_uri(resolver._reverse_with_prefix(view, prefix, *args, **kwargs))
+  File "/home/kapil/venv36/lib/python3.6/site-packages/django/urls/resolvers.py", line 632, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'app_list' with keyword arguments '{'app_label': ''}' not found. 1 pattern(s) tried: ['admin\\/(?P<app_label>auth|configuration)/$']
+[ERROR]: [05/29/2018 09:48:28 AM] [Internal Server Error: /action/show/]
+Traceback (most recent call last):
+  File "/home/kapil/venv36/lib/python3.6/site-packages/django/core/handlers/exception.py", line 35, in inner
+    response = get_response(request)
+  File "/home/kapil/venv36/lib/python3.6/site-packages/django/core/handlers/base.py", line 128, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/kapil/venv36/lib/python3.6/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/kapil/PycharmProjects/django_project/configuration/views.py", line 66, in show_me
+    return render(request, 'admin/configure_changelist.html')
+  File "/home/kapil/venv36/lib/python3.6/site-packages/django/shortcuts.py", line 36, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/home/kapil/venv36/lib/python3.6/site-packages/django/template/loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "/home/kapil/venv36/lib/python3.6/site-packages/django/template/backends/django.py", line 61, in render
+    return self.template.render(context)
+  File "/home/kapil/venv36/lib/python3.6/site-packages/django/template/base.py", line 175, in render
+    return self._render(context)
+  File "/home/kapil/venv36/lib/python3.6/site-packages/django/template/base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "/home/kapil/venv36/lib/python3.6/site-packages/django/template/base.py", line 943, in render
+    bit = node.render_annotated(context)
+  File "/home/kapil/venv36/lib/python3.6/site-packages/django/template/base.py", line 910, in render_annotated
+    return self.render(context)
+  File "/home/kapil/venv36/lib/python3.6/site-packages/django/template/loader_tags.py", line 155, in render
+    return compiled_parent._render(context)
+  File "/home/kapil/venv36/lib/python3.6/site-packages/django/template/base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "/home/kapil/venv36/lib/python3.6/site-packages/django/template/base.py", line 943, in render
+    bit = node.render_annotated(context)
+  File "/home/kapil/venv36/lib/python3.6/site-packages/django/template/base.py", line 910, in render_annotated
+    return self.render(context)
+  File "/home/kapil/venv36/lib/python3.6/site-packages/django/template/loader_tags.py", line 155, in render
+    return compiled_parent._render(context)
+  File "/home/kapil/venv36/lib/python3.6/site-packages/django/template/base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "/home/kapil/venv36/lib/python3.6/site-packages/django/template/base.py", line 943, in render
+    bit = node.render_annotated(context)
+  File "/home/kapil/venv36/lib/python3.6/site-packages/django/template/base.py", line 910, in render_annotated
+    return self.render(context)
+  File "/home/kapil/venv36/lib/python3.6/site-packages/django/template/loader_tags.py", line 155, in render
+    return compiled_parent._render(context)
+  File "/home/kapil/venv36/lib/python3.6/site-packages/django/template/base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "/home/kapil/venv36/lib/python3.6/site-packages/django/template/base.py", line 943, in render
+    bit = node.render_annotated(context)
+  File "/home/kapil/venv36/lib/python3.6/site-packages/django/template/base.py", line 910, in render_annotated
+    return self.render(context)
+  File "/home/kapil/venv36/lib/python3.6/site-packages/django/template/defaulttags.py", line 314, in render
+    return nodelist.render(context)
+  File "/home/kapil/venv36/lib/python3.6/site-packages/django/template/base.py", line 943, in render
+    bit = node.render_annotated(context)
+  File "/home/kapil/venv36/lib/python3.6/site-packages/django/template/base.py", line 910, in render_annotated
+    return self.render(context)
+  File "/home/kapil/venv36/lib/python3.6/site-packages/django/template/loader_tags.py", line 67, in render
+    result = block.nodelist.render(context)
+  File "/home/kapil/venv36/lib/python3.6/site-packages/django/template/base.py", line 943, in render
+    bit = node.render_annotated(context)
+  File "/home/kapil/venv36/lib/python3.6/site-packages/django/template/base.py", line 910, in render_annotated
+    return self.render(context)
+  File "/home/kapil/venv36/lib/python3.6/site-packages/django/template/defaulttags.py", line 447, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+  File "/home/kapil/venv36/lib/python3.6/site-packages/django/urls/base.py", line 88, in reverse
+    return iri_to_uri(resolver._reverse_with_prefix(view, prefix, *args, **kwargs))
+  File "/home/kapil/venv36/lib/python3.6/site-packages/django/urls/resolvers.py", line 632, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'app_list' with keyword arguments '{'app_label': ''}' not found. 1 pattern(s) tried: ['admin\\/(?P<app_label>auth|configuration)/$']
+[ERROR]: [05/29/2018 09:48:28 AM] [Internal Server Error: /action/show/]
+Traceback (most recent call last):
+  File "/home/kapil/venv36/lib/python3.6/site-packages/django/core/handlers/exception.py", line 35, in inner
+    response = get_response(request)
+  File "/home/kapil/venv36/lib/python3.6/site-packages/django/core/handlers/base.py", line 128, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/kapil/venv36/lib/python3.6/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/kapil/PycharmProjects/django_project/configuration/views.py", line 66, in show_me
+    return render(request, 'admin/configure_changelist.html')
+  File "/home/kapil/venv36/lib/python3.6/site-packages/django/shortcuts.py", line 36, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/home/kapil/venv36/lib/python3.6/site-packages/django/template/loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "/home/kapil/venv36/lib/python3.6/site-packages/django/template/backends/django.py", line 61, in render
+    return self.template.render(context)
+  File "/home/kapil/venv36/lib/python3.6/site-packages/django/template/base.py", line 175, in render
+    return self._render(context)
+  File "/home/kapil/venv36/lib/python3.6/site-packages/django/template/base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "/home/kapil/venv36/lib/python3.6/site-packages/django/template/base.py", line 943, in render
+    bit = node.render_annotated(context)
+  File "/home/kapil/venv36/lib/python3.6/site-packages/django/template/base.py", line 910, in render_annotated
+    return self.render(context)
+  File "/home/kapil/venv36/lib/python3.6/site-packages/django/template/loader_tags.py", line 155, in render
+    return compiled_parent._render(context)
+  File "/home/kapil/venv36/lib/python3.6/site-packages/django/template/base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "/home/kapil/venv36/lib/python3.6/site-packages/django/template/base.py", line 943, in render
+    bit = node.render_annotated(context)
+  File "/home/kapil/venv36/lib/python3.6/site-packages/django/template/base.py", line 910, in render_annotated
+    return self.render(context)
+  File "/home/kapil/venv36/lib/python3.6/site-packages/django/template/loader_tags.py", line 155, in render
+    return compiled_parent._render(context)
+  File "/home/kapil/venv36/lib/python3.6/site-packages/django/template/base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "/home/kapil/venv36/lib/python3.6/site-packages/django/template/base.py", line 943, in render
+    bit = node.render_annotated(context)
+  File "/home/kapil/venv36/lib/python3.6/site-packages/django/template/base.py", line 910, in render_annotated
+    return self.render(context)
+  File "/home/kapil/venv36/lib/python3.6/site-packages/django/template/loader_tags.py", line 155, in render
+    return compiled_parent._render(context)
+  File "/home/kapil/venv36/lib/python3.6/site-packages/django/template/base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "/home/kapil/venv36/lib/python3.6/site-packages/django/template/base.py", line 943, in render
+    bit = node.render_annotated(context)
+  File "/home/kapil/venv36/lib/python3.6/site-packages/django/template/base.py", line 910, in render_annotated
+    return self.render(context)
+  File "/home/kapil/venv36/lib/python3.6/site-packages/django/template/defaulttags.py", line 314, in render
+    return nodelist.render(context)
+  File "/home/kapil/venv36/lib/python3.6/site-packages/django/template/base.py", line 943, in render
+    bit = node.render_annotated(context)
+  File "/home/kapil/venv36/lib/python3.6/site-packages/django/template/base.py", line 910, in render_annotated
+    return self.render(context)
+  File "/home/kapil/venv36/lib/python3.6/site-packages/django/template/loader_tags.py", line 67, in render
+    result = block.nodelist.render(context)
+  File "/home/kapil/venv36/lib/python3.6/site-packages/django/template/base.py", line 943, in render
+    bit = node.render_annotated(context)
+  File "/home/kapil/venv36/lib/python3.6/site-packages/django/template/base.py", line 910, in render_annotated
+    return self.render(context)
+  File "/home/kapil/venv36/lib/python3.6/site-packages/django/template/defaulttags.py", line 447, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+  File "/home/kapil/venv36/lib/python3.6/site-packages/django/urls/base.py", line 88, in reverse
+    return iri_to_uri(resolver._reverse_with_prefix(view, prefix, *args, **kwargs))
+  File "/home/kapil/venv36/lib/python3.6/site-packages/django/urls/resolvers.py", line 632, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'app_list' with keyword arguments '{'app_label': ''}' not found. 1 pattern(s) tried: ['admin\\/(?P<app_label>auth|configuration)/$']
+[ERROR]: [05/29/2018 09:48:28 AM] [Internal Server Error: /action/show/]
+Traceback (most recent call last):
+  File "/home/kapil/venv36/lib/python3.6/site-packages/django/core/handlers/exception.py", line 35, in inner
+    response = get_response(request)
+  File "/home/kapil/venv36/lib/python3.6/site-packages/django/core/handlers/base.py", line 128, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/kapil/venv36/lib/python3.6/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/kapil/PycharmProjects/django_project/configuration/views.py", line 66, in show_me
+    return render(request, 'admin/configure_changelist.html')
+  File "/home/kapil/venv36/lib/python3.6/site-packages/django/shortcuts.py", line 36, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/home/kapil/venv36/lib/python3.6/site-packages/django/template/loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "/home/kapil/venv36/lib/python3.6/site-packages/django/template/backends/django.py", line 61, in render
+    return self.template.render(context)
+  File "/home/kapil/venv36/lib/python3.6/site-packages/django/template/base.py", line 175, in render
+    return self._render(context)
+  File "/home/kapil/venv36/lib/python3.6/site-packages/django/template/base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "/home/kapil/venv36/lib/python3.6/site-packages/django/template/base.py", line 943, in render
+    bit = node.render_annotated(context)
+  File "/home/kapil/venv36/lib/python3.6/site-packages/django/template/base.py", line 910, in render_annotated
+    return self.render(context)
+  File "/home/kapil/venv36/lib/python3.6/site-packages/django/template/loader_tags.py", line 155, in render
+    return compiled_parent._render(context)
+  File "/home/kapil/venv36/lib/python3.6/site-packages/django/template/base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "/home/kapil/venv36/lib/python3.6/site-packages/django/template/base.py", line 943, in render
+    bit = node.render_annotated(context)
+  File "/home/kapil/venv36/lib/python3.6/site-packages/django/template/base.py", line 910, in render_annotated
+    return self.render(context)
+  File "/home/kapil/venv36/lib/python3.6/site-packages/django/template/loader_tags.py", line 155, in render
+    return compiled_parent._render(context)
+  File "/home/kapil/venv36/lib/python3.6/site-packages/django/template/base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "/home/kapil/venv36/lib/python3.6/site-packages/django/template/base.py", line 943, in render
+    bit = node.render_annotated(context)
+  File "/home/kapil/venv36/lib/python3.6/site-packages/django/template/base.py", line 910, in render_annotated
+    return self.render(context)
+  File "/home/kapil/venv36/lib/python3.6/site-packages/django/template/loader_tags.py", line 155, in render
+    return compiled_parent._render(context)
+  File "/home/kapil/venv36/lib/python3.6/site-packages/django/template/base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "/home/kapil/venv36/lib/python3.6/site-packages/django/template/base.py", line 943, in render
+    bit = node.render_annotated(context)
+  File "/home/kapil/venv36/lib/python3.6/site-packages/django/template/base.py", line 910, in render_annotated
+    return self.render(context)
+  File "/home/kapil/venv36/lib/python3.6/site-packages/django/template/defaulttags.py", line 314, in render
+    return nodelist.render(context)
+  File "/home/kapil/venv36/lib/python3.6/site-packages/django/template/base.py", line 943, in render
+    bit = node.render_annotated(context)
+  File "/home/kapil/venv36/lib/python3.6/site-packages/django/template/base.py", line 910, in render_annotated
+    return self.render(context)
+  File "/home/kapil/venv36/lib/python3.6/site-packages/django/template/loader_tags.py", line 67, in render
+    result = block.nodelist.render(context)
+  File "/home/kapil/venv36/lib/python3.6/site-packages/django/template/base.py", line 943, in render
+    bit = node.render_annotated(context)
+  File "/home/kapil/venv36/lib/python3.6/site-packages/django/template/base.py", line 910, in render_annotated
+    return self.render(context)
+  File "/home/kapil/venv36/lib/python3.6/site-packages/django/template/defaulttags.py", line 447, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+  File "/home/kapil/venv36/lib/python3.6/site-packages/django/urls/base.py", line 88, in reverse
+    return iri_to_uri(resolver._reverse_with_prefix(view, prefix, *args, **kwargs))
+  File "/home/kapil/venv36/lib/python3.6/site-packages/django/urls/resolvers.py", line 632, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'app_list' with keyword arguments '{'app_label': ''}' not found. 1 pattern(s) tried: ['admin\\/(?P<app_label>auth|configuration)/$']
+[ERROR]: [05/29/2018 09:48:29 AM] [Internal Server Error: /action/show/]
+Traceback (most recent call last):
+  File "/home/kapil/venv36/lib/python3.6/site-packages/django/core/handlers/exception.py", line 35, in inner
+    response = get_response(request)
+  File "/home/kapil/venv36/lib/python3.6/site-packages/django/core/handlers/base.py", line 128, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/kapil/venv36/lib/python3.6/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/kapil/PycharmProjects/django_project/configuration/views.py", line 66, in show_me
+    return render(request, 'admin/configure_changelist.html')
+  File "/home/kapil/venv36/lib/python3.6/site-packages/django/shortcuts.py", line 36, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/home/kapil/venv36/lib/python3.6/site-packages/django/template/loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "/home/kapil/venv36/lib/python3.6/site-packages/django/template/backends/django.py", line 61, in render
+    return self.template.render(context)
+  File "/home/kapil/venv36/lib/python3.6/site-packages/django/template/base.py", line 175, in render
+    return self._render(context)
+  File "/home/kapil/venv36/lib/python3.6/site-packages/django/template/base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "/home/kapil/venv36/lib/python3.6/site-packages/django/template/base.py", line 943, in render
+    bit = node.render_annotated(context)
+  File "/home/kapil/venv36/lib/python3.6/site-packages/django/template/base.py", line 910, in render_annotated
+    return self.render(context)
+  File "/home/kapil/venv36/lib/python3.6/site-packages/django/template/loader_tags.py", line 155, in render
+    return compiled_parent._render(context)
+  File "/home/kapil/venv36/lib/python3.6/site-packages/django/template/base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "/home/kapil/venv36/lib/python3.6/site-packages/django/template/base.py", line 943, in render
+    bit = node.render_annotated(context)
+  File "/home/kapil/venv36/lib/python3.6/site-packages/django/template/base.py", line 910, in render_annotated
+    return self.render(context)
+  File "/home/kapil/venv36/lib/python3.6/site-packages/django/template/loader_tags.py", line 155, in render
+    return compiled_parent._render(context)
+  File "/home/kapil/venv36/lib/python3.6/site-packages/django/template/base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "/home/kapil/venv36/lib/python3.6/site-packages/django/template/base.py", line 943, in render
+    bit = node.render_annotated(context)
+  File "/home/kapil/venv36/lib/python3.6/site-packages/django/template/base.py", line 910, in render_annotated
+    return self.render(context)
+  File "/home/kapil/venv36/lib/python3.6/site-packages/django/template/loader_tags.py", line 155, in render
+    return compiled_parent._render(context)
+  File "/home/kapil/venv36/lib/python3.6/site-packages/django/template/base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "/home/kapil/venv36/lib/python3.6/site-packages/django/template/base.py", line 943, in render
+    bit = node.render_annotated(context)
+  File "/home/kapil/venv36/lib/python3.6/site-packages/django/template/base.py", line 910, in render_annotated
+    return self.render(context)
+  File "/home/kapil/venv36/lib/python3.6/site-packages/django/template/defaulttags.py", line 314, in render
+    return nodelist.render(context)
+  File "/home/kapil/venv36/lib/python3.6/site-packages/django/template/base.py", line 943, in render
+    bit = node.render_annotated(context)
+  File "/home/kapil/venv36/lib/python3.6/site-packages/django/template/base.py", line 910, in render_annotated
+    return self.render(context)
+  File "/home/kapil/venv36/lib/python3.6/site-packages/django/template/loader_tags.py", line 67, in render
+    result = block.nodelist.render(context)
+  File "/home/kapil/venv36/lib/python3.6/site-packages/django/template/base.py", line 943, in render
+    bit = node.render_annotated(context)
+  File "/home/kapil/venv36/lib/python3.6/site-packages/django/template/base.py", line 910, in render_annotated
+    return self.render(context)
+  File "/home/kapil/venv36/lib/python3.6/site-packages/django/template/defaulttags.py", line 447, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+  File "/home/kapil/venv36/lib/python3.6/site-packages/django/urls/base.py", line 88, in reverse
+    return iri_to_uri(resolver._reverse_with_prefix(view, prefix, *args, **kwargs))
+  File "/home/kapil/venv36/lib/python3.6/site-packages/django/urls/resolvers.py", line 632, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'app_list' with keyword arguments '{'app_label': ''}' not found. 1 pattern(s) tried: ['admin\\/(?P<app_label>auth|configuration)/$']
+[ERROR]: [05/29/2018 09:48:29 AM] [Internal Server Error: /action/show/]
+Traceback (most recent call last):
+  File "/home/kapil/venv36/lib/python3.6/site-packages/django/core/handlers/exception.py", line 35, in inner
+    response = get_response(request)
+  File "/home/kapil/venv36/lib/python3.6/site-packages/django/core/handlers/base.py", line 128, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/kapil/venv36/lib/python3.6/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/kapil/PycharmProjects/django_project/configuration/views.py", line 66, in show_me
+    return render(request, 'admin/configure_changelist.html')
+  File "/home/kapil/venv36/lib/python3.6/site-packages/django/shortcuts.py", line 36, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/home/kapil/venv36/lib/python3.6/site-packages/django/template/loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "/home/kapil/venv36/lib/python3.6/site-packages/django/template/backends/django.py", line 61, in render
+    return self.template.render(context)
+  File "/home/kapil/venv36/lib/python3.6/site-packages/django/template/base.py", line 175, in render
+    return self._render(context)
+  File "/home/kapil/venv36/lib/python3.6/site-packages/django/template/base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "/home/kapil/venv36/lib/python3.6/site-packages/django/template/base.py", line 943, in render
+    bit = node.render_annotated(context)
+  File "/home/kapil/venv36/lib/python3.6/site-packages/django/template/base.py", line 910, in render_annotated
+    return self.render(context)
+  File "/home/kapil/venv36/lib/python3.6/site-packages/django/template/loader_tags.py", line 155, in render
+    return compiled_parent._render(context)
+  File "/home/kapil/venv36/lib/python3.6/site-packages/django/template/base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "/home/kapil/venv36/lib/python3.6/site-packages/django/template/base.py", line 943, in render
+    bit = node.render_annotated(context)
+  File "/home/kapil/venv36/lib/python3.6/site-packages/django/template/base.py", line 910, in render_annotated
+    return self.render(context)
+  File "/home/kapil/venv36/lib/python3.6/site-packages/django/template/loader_tags.py", line 155, in render
+    return compiled_parent._render(context)
+  File "/home/kapil/venv36/lib/python3.6/site-packages/django/template/base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "/home/kapil/venv36/lib/python3.6/site-packages/django/template/base.py", line 943, in render
+    bit = node.render_annotated(context)
+  File "/home/kapil/venv36/lib/python3.6/site-packages/django/template/base.py", line 910, in render_annotated
+    return self.render(context)
+  File "/home/kapil/venv36/lib/python3.6/site-packages/django/template/loader_tags.py", line 155, in render
+    return compiled_parent._render(context)
+  File "/home/kapil/venv36/lib/python3.6/site-packages/django/template/base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "/home/kapil/venv36/lib/python3.6/site-packages/django/template/base.py", line 943, in render
+    bit = node.render_annotated(context)
+  File "/home/kapil/venv36/lib/python3.6/site-packages/django/template/base.py", line 910, in render_annotated
+    return self.render(context)
+  File "/home/kapil/venv36/lib/python3.6/site-packages/django/template/defaulttags.py", line 314, in render
+    return nodelist.render(context)
+  File "/home/kapil/venv36/lib/python3.6/site-packages/django/template/base.py", line 943, in render
+    bit = node.render_annotated(context)
+  File "/home/kapil/venv36/lib/python3.6/site-packages/django/template/base.py", line 910, in render_annotated
+    return self.render(context)
+  File "/home/kapil/venv36/lib/python3.6/site-packages/django/template/loader_tags.py", line 67, in render
+    result = block.nodelist.render(context)
+  File "/home/kapil/venv36/lib/python3.6/site-packages/django/template/base.py", line 943, in render
+    bit = node.render_annotated(context)
+  File "/home/kapil/venv36/lib/python3.6/site-packages/django/template/base.py", line 910, in render_annotated
+    return self.render(context)
+  File "/home/kapil/venv36/lib/python3.6/site-packages/django/template/defaulttags.py", line 447, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+  File "/home/kapil/venv36/lib/python3.6/site-packages/django/urls/base.py", line 88, in reverse
+    return iri_to_uri(resolver._reverse_with_prefix(view, prefix, *args, **kwargs))
+  File "/home/kapil/venv36/lib/python3.6/site-packages/django/urls/resolvers.py", line 632, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'app_list' with keyword arguments '{'app_label': ''}' not found. 1 pattern(s) tried: ['admin\\/(?P<app_label>auth|configuration)/$']
+[ERROR]: [05/29/2018 09:48:36 AM] [Internal Server Error: /action/show/]
+Traceback (most recent call last):
+  File "/home/kapil/venv36/lib/python3.6/site-packages/django/core/handlers/exception.py", line 35, in inner
+    response = get_response(request)
+  File "/home/kapil/venv36/lib/python3.6/site-packages/django/core/handlers/base.py", line 128, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/kapil/venv36/lib/python3.6/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/kapil/PycharmProjects/django_project/configuration/views.py", line 66, in show_me
+    return render(request, 'admin/configure_changelist.html')
+  File "/home/kapil/venv36/lib/python3.6/site-packages/django/shortcuts.py", line 36, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/home/kapil/venv36/lib/python3.6/site-packages/django/template/loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "/home/kapil/venv36/lib/python3.6/site-packages/django/template/backends/django.py", line 61, in render
+    return self.template.render(context)
+  File "/home/kapil/venv36/lib/python3.6/site-packages/django/template/base.py", line 175, in render
+    return self._render(context)
+  File "/home/kapil/venv36/lib/python3.6/site-packages/django/template/base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "/home/kapil/venv36/lib/python3.6/site-packages/django/template/base.py", line 943, in render
+    bit = node.render_annotated(context)
+  File "/home/kapil/venv36/lib/python3.6/site-packages/django/template/base.py", line 910, in render_annotated
+    return self.render(context)
+  File "/home/kapil/venv36/lib/python3.6/site-packages/django/template/loader_tags.py", line 155, in render
+    return compiled_parent._render(context)
+  File "/home/kapil/venv36/lib/python3.6/site-packages/django/template/base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "/home/kapil/venv36/lib/python3.6/site-packages/django/template/base.py", line 943, in render
+    bit = node.render_annotated(context)
+  File "/home/kapil/venv36/lib/python3.6/site-packages/django/template/base.py", line 910, in render_annotated
+    return self.render(context)
+  File "/home/kapil/venv36/lib/python3.6/site-packages/django/template/loader_tags.py", line 155, in render
+    return compiled_parent._render(context)
+  File "/home/kapil/venv36/lib/python3.6/site-packages/django/template/base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "/home/kapil/venv36/lib/python3.6/site-packages/django/template/base.py", line 943, in render
+    bit = node.render_annotated(context)
+  File "/home/kapil/venv36/lib/python3.6/site-packages/django/template/base.py", line 910, in render_annotated
+    return self.render(context)
+  File "/home/kapil/venv36/lib/python3.6/site-packages/django/template/loader_tags.py", line 155, in render
+    return compiled_parent._render(context)
+  File "/home/kapil/venv36/lib/python3.6/site-packages/django/template/base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "/home/kapil/venv36/lib/python3.6/site-packages/django/template/base.py", line 943, in render
+    bit = node.render_annotated(context)
+  File "/home/kapil/venv36/lib/python3.6/site-packages/django/template/base.py", line 910, in render_annotated
+    return self.render(context)
+  File "/home/kapil/venv36/lib/python3.6/site-packages/django/template/defaulttags.py", line 314, in render
+    return nodelist.render(context)
+  File "/home/kapil/venv36/lib/python3.6/site-packages/django/template/base.py", line 943, in render
+    bit = node.render_annotated(context)
+  File "/home/kapil/venv36/lib/python3.6/site-packages/django/template/base.py", line 910, in render_annotated
+    return self.render(context)
+  File "/home/kapil/venv36/lib/python3.6/site-packages/django/template/loader_tags.py", line 67, in render
+    result = block.nodelist.render(context)
+  File "/home/kapil/venv36/lib/python3.6/site-packages/django/template/base.py", line 943, in render
+    bit = node.render_annotated(context)
+  File "/home/kapil/venv36/lib/python3.6/site-packages/django/template/base.py", line 910, in render_annotated
+    return self.render(context)
+  File "/home/kapil/venv36/lib/python3.6/site-packages/django/template/defaulttags.py", line 447, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+  File "/home/kapil/venv36/lib/python3.6/site-packages/django/urls/base.py", line 88, in reverse
+    return iri_to_uri(resolver._reverse_with_prefix(view, prefix, *args, **kwargs))
+  File "/home/kapil/venv36/lib/python3.6/site-packages/django/urls/resolvers.py", line 632, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'app_list' with keyword arguments '{'app_label': ''}' not found. 1 pattern(s) tried: ['admin\\/(?P<app_label>auth|configuration)/$']
+[ERROR]: [05/29/2018 09:48:39 AM] [Internal Server Error: /action/show/]
+Traceback (most recent call last):
+  File "/home/kapil/venv36/lib/python3.6/site-packages/django/core/handlers/exception.py", line 35, in inner
+    response = get_response(request)
+  File "/home/kapil/venv36/lib/python3.6/site-packages/django/core/handlers/base.py", line 128, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/kapil/venv36/lib/python3.6/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/kapil/PycharmProjects/django_project/configuration/views.py", line 66, in show_me
+    return render(request, 'admin/configure_changelist.html')
+  File "/home/kapil/venv36/lib/python3.6/site-packages/django/shortcuts.py", line 36, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/home/kapil/venv36/lib/python3.6/site-packages/django/template/loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "/home/kapil/venv36/lib/python3.6/site-packages/django/template/backends/django.py", line 61, in render
+    return self.template.render(context)
+  File "/home/kapil/venv36/lib/python3.6/site-packages/django/template/base.py", line 175, in render
+    return self._render(context)
+  File "/home/kapil/venv36/lib/python3.6/site-packages/django/template/base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "/home/kapil/venv36/lib/python3.6/site-packages/django/template/base.py", line 943, in render
+    bit = node.render_annotated(context)
+  File "/home/kapil/venv36/lib/python3.6/site-packages/django/template/base.py", line 910, in render_annotated
+    return self.render(context)
+  File "/home/kapil/venv36/lib/python3.6/site-packages/django/template/loader_tags.py", line 155, in render
+    return compiled_parent._render(context)
+  File "/home/kapil/venv36/lib/python3.6/site-packages/django/template/base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "/home/kapil/venv36/lib/python3.6/site-packages/django/template/base.py", line 943, in render
+    bit = node.render_annotated(context)
+  File "/home/kapil/venv36/lib/python3.6/site-packages/django/template/base.py", line 910, in render_annotated
+    return self.render(context)
+  File "/home/kapil/venv36/lib/python3.6/site-packages/django/template/loader_tags.py", line 155, in render
+    return compiled_parent._render(context)
+  File "/home/kapil/venv36/lib/python3.6/site-packages/django/template/base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "/home/kapil/venv36/lib/python3.6/site-packages/django/template/base.py", line 943, in render
+    bit = node.render_annotated(context)
+  File "/home/kapil/venv36/lib/python3.6/site-packages/django/template/base.py", line 910, in render_annotated
+    return self.render(context)
+  File "/home/kapil/venv36/lib/python3.6/site-packages/django/template/loader_tags.py", line 155, in render
+    return compiled_parent._render(context)
+  File "/home/kapil/venv36/lib/python3.6/site-packages/django/template/base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "/home/kapil/venv36/lib/python3.6/site-packages/django/template/base.py", line 943, in render
+    bit = node.render_annotated(context)
+  File "/home/kapil/venv36/lib/python3.6/site-packages/django/template/base.py", line 910, in render_annotated
+    return self.render(context)
+  File "/home/kapil/venv36/lib/python3.6/site-packages/django/template/defaulttags.py", line 314, in render
+    return nodelist.render(context)
+  File "/home/kapil/venv36/lib/python3.6/site-packages/django/template/base.py", line 943, in render
+    bit = node.render_annotated(context)
+  File "/home/kapil/venv36/lib/python3.6/site-packages/django/template/base.py", line 910, in render_annotated
+    return self.render(context)
+  File "/home/kapil/venv36/lib/python3.6/site-packages/django/template/loader_tags.py", line 67, in render
+    result = block.nodelist.render(context)
+  File "/home/kapil/venv36/lib/python3.6/site-packages/django/template/base.py", line 943, in render
+    bit = node.render_annotated(context)
+  File "/home/kapil/venv36/lib/python3.6/site-packages/django/template/base.py", line 910, in render_annotated
+    return self.render(context)
+  File "/home/kapil/venv36/lib/python3.6/site-packages/django/template/defaulttags.py", line 447, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+  File "/home/kapil/venv36/lib/python3.6/site-packages/django/urls/base.py", line 88, in reverse
+    return iri_to_uri(resolver._reverse_with_prefix(view, prefix, *args, **kwargs))
+  File "/home/kapil/venv36/lib/python3.6/site-packages/django/urls/resolvers.py", line 632, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'app_list' with keyword arguments '{'app_label': ''}' not found. 1 pattern(s) tried: ['admin\\/(?P<app_label>auth|configuration)/$']
+[WARNING]: [05/29/2018 09:49:53 AM] [Not Found: /action/]

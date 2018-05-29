@@ -4,11 +4,17 @@ $(document).ready(function(){
         show_hide();
     });
     function show_hide(){
-        if ($("#id_type").val() == 'aM' ){
-                $(".module")[1].style.display="block"
+        try{
+
+            if ($("#id_type").val() == 'aM' ){
+                    $(".module")[1].style.display="block"
+                }
+            else{
+                 $(".module")[1].style.display="none"
             }
-        else{
-             $(".module")[1].style.display="none"
+        }
+        catch (e) {
+            
         }
     }
 });

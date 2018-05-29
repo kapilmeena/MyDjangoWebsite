@@ -13,6 +13,7 @@
     <link rel="stylesheet" type="text/css" href="{% static 'codemirror/lib/codemirror.css' %}"/>
     <link rel="stylesheet" type="text/css" href="{% static 'codemirror/theme/blackboard.css' %}"/>
     <link rel="stylesheet" type="text/css" href="{% static 'codemirror/addon/hint/show-hint.css' %}"/>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
 
     <script src="{% static 'codemirror/lib/codemirror.js' %}"></script>
     <script src="{% static 'codemirror/addon/hint/show-hint.js' %}"></script>
@@ -24,11 +25,22 @@
     <title>editor</title>
 
     <style>
-    .CodeMirror {
-        width: 800px;
-        border: 1px solid black;
-    }
+        .list-group{
+            min-width: 4rem;
+            max-width: 20vw;
+            min-height: 100px;
+            border: 1px solid black;
+            position: fixed;
+            overflow:auto;
+            max-height: 500px;
+            margin-bottom: 10px;
+            padding: auto;
+            text-align: center;
+        }
 
+    .CodeMirror {
+        min-width: 800px;
+    }
     #button-run-sql {
         margin-top: 5px;
     }
@@ -54,7 +66,7 @@
         <div class="col-md-2">
             <div class="list-group">
                 {% for i in list %}
-                    <button type="button" class="list-group-item list-group-item-action">{{ i }}</button>
+                    <li type="button" class="formula-list-item">{{ i }}</li>
                 {% endfor %}
             </div>
         </div>
@@ -64,35 +76,34 @@
                     {{ form }}
                 <input type="submit" class="btn btn-success" onclick="copy()">
             </form>
-{#            <div class="submit-row">#}
-{#                <input type="submit" value="Save" class="default" name="_save">#}
-{##}
-{##}
-{#                    <p class="deletelink-box"><a href="" class="deletelink">Delete</a></p>#}
-{##}
-{##}
-{#                <input type="submit" value="Save and add another" name="_addanother">#}
-{#                <input type="submit" value="Save and continue editing" name="_continue">#}
-{#            </div>#}
         </div>
     </div>
     <script>
     window.onload = function() {
-          window.editor = CodeMirror.fromTextArea(document.getElementById('id_f_description'), {
-            mode: 'text/x-vtsql',
+          window.editor = CodeMirror.fromTextArea(document.getElementById('id_formula'), {
+            mode: 'text/x-vtsql', //custom from
             indentWithTabs: true,
             smartIndent: true,
             lineNumbers: true,
             matchBrackets : true,
-            autofocus: true
+            autofocus: true,
+            indentUnit: 4,
+            autoCloseBrackets: true,
+            hint: CodeMirror.hint.sql
+
           });
-          editor.setOption("theme", 'blackboard')
+          editor.setOption("theme", 'blackboard');
+         CodeMirror.commands.autocomplete = function (cm) {
+             CodeMirror.showHint(cm, CodeMirror.hint.sql);
+         };
         };
     function copy(){
-        var editor_content = window.editor.getValue();
-        document.getElementById('id_f_description').value = editor_content;
-
+        document.getElementById('id_formula').value = window.editor.getValue();
     }
+    $('li').on('click',function () {
+        modelname =(this.innerHTML);
+
+    })
     </script>
 </div>
 <!-- Optional JavaScript -->

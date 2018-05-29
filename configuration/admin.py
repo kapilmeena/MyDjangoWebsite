@@ -17,15 +17,6 @@ class ConfigurationResource(resources.ModelResource):
     def dehydrate_name(self,Configuration):
         return '%s' %(Configuration.user_defined_name)
 
-    # def dehydrate_dimension(self,Configuration):
-    #     return '%s' %(Configuration.user_defined_name)
-    #
-    # def dehydrate_measure(self,Configuration):
-    #     return '%s' %(Configuration.user_defined_name)
-
-# class ConfigurationAdmin(ImportExportModelAdmin):
-#     resource_class = ConfigurationResource
-
 class ConfigurationAdmin(ImportExportActionModelAdmin):
     pass
 
@@ -91,58 +82,6 @@ class MyAdminSite(AdminSite):
 
 
 admin_site = MyAdminSite(name='myadmin')
-# class NameAdmin(admin.ModelAdmin):
-#     admin.site.register(Name)
-
-# class ConfigurationAdmin(admin.ModelAdmin):
-#     def save_model(self, request, obj, form, change):
-#         #  At this point; the object already has the new values set; we will have to reset as needed
-#         conditional_editable_fields = ['is_key', 'unit']
-#         config_type = form.cleaned_data.get('type')
-#         if config_type != 'aD':
-#             for field in conditional_editable_fields:
-#                 if field in form.changed_data:  # The value has been changed by the user
-#                     setattr(obj, field, form.initial.get(field))  # Set the initial value
-#                     self.message_user(request, "Cannot edit field: {}; value has been reset".format(field),
-#                                       messages.WARNING)  # Inform the user that we reset the value
-#         return super(ConfigurationAdmin, self).save_mode(request, obj, form, change)
-#
-#
-#      if Configuration.type=='aD':
-#     fieldsets=(
-#             (None, {
-#                 'fields': ('name', 'user_defined_name', 'type')
-#             }),
-#             ('Advanced', {
-#                 'fields': ('unit','is_key')
-#             })
-#         )
-#
-#
-#  def show_hide(self):
-#     self.fields = Configuration.get_field_display()
-# if Configuration.get_type(self=Configuration) == 'Dimension':
-#     fieldsets = (
-#         (None, {
-#             'fields': ('name', 'user_defined_name', 'type')
-#         }),
-#         ('Availability', {
-#             'fields': ('is_key', 'unit')
-#         })
-#     )
-# else:
-#     fieldsets = (
-#         (None, {
-#             'fields': ('name', 'user_defined_name', 'type')
-#         }),
-#         ('Availability', {
-#             'fields': ()
-#         })
-#     )
-
-
-# class ConfigureEdits(admin.ChoicesFieldListFilter):
-#     _field_list_filters =
 
 # register our model with admin
 admin.site.register(Configuration, ConfigurationAdmin)

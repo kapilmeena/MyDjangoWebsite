@@ -13,4 +13,4 @@ from .models import Name, formula
 class FormulaForm(ModelForm):
     class Meta:
         model = formula
-        fields = ['f_name', 'f_description']
+        fields = ['name', 'formula']
